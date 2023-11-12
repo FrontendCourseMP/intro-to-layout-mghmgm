@@ -1,0 +1,9 @@
+@use '../utils/variables';
+
+.action {
+    color: variables.$subtext-color;
+}
+
+.action__link {
+    color: variables.$main-color;
+}

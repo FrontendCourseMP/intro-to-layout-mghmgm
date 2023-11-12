@@ -1,9 +1,11 @@
+@use '../utils/variables';
+
 .about-us__item {
     font-size: 1.8rem;
 }
 
 .about-us__span {
-    color: var(--main-color);
+    color: variables.$main-color;
     font-size: 7rem;
 }
 

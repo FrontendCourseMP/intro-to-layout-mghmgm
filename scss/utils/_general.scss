@@ -1,0 +1,27 @@
+@use '../utils/variables';
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Philosopher Bold", serif;
+    background-color: variables.$background-color;
+    font-size: 1.6rem;
+}
+
+main {
+    color: variables.$text-color;
+}
+
+button {
+    color: variables.$subtext-color;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}

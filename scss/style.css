@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Inter Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../fonts/Inter-Light.eot");
+  scr: local("Inter Light"), url("../../fonts/Inter-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff"), url("../../fonts/Inter-Light.ttf") format("truetype"), url("../../fonts/Inter-Light.svg#Inter") format("svg");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/Inter-Regular.eot");
+  scr: local("Inter Regular"), url("../../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.ttf") format("truetype"), url("../../fonts/Inter-Regular.svg#Inter") format("svg");
+}
+@font-face {
+  font-family: "Inter Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../../fonts/Inter-Medium.eot");
+  scr: local("Inter Medium"), url("../../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Medium.woff2") format("woff2"), url("../../fonts/Inter-Medium.woff") format("woff"), url("../../fonts/Inter-Medium.ttf") format("truetype"), url("../../fonts/Inter-Medium.svg#Inter") format("svg");
+}
+@font-face {
+  font-family: "Inter SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../fonts/Inter-SemiBold.eot");
+  scr: local("Inter SemiBold"), url("../../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.woff") format("woff"), url("../../fonts/Inter-SemiBold.ttf") format("truetype"), url("../../fonts/Inter-SemiBold.svg#Inter") format("svg");
+}
+@font-face {
+  font-family: "Inter Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/Inter-Bold.eot");
+  scr: local("Inter Bold"), url("../../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.ttf") format("truetype"), url("../../fonts/Inter-Bold.svg#Inter") format("svg");
+}
+@font-face {
+  font-family: "Philosopher Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../../fonts/Philosopher-Bold.eot");
+  scr: local("Philosopher Bold"), url("../../fonts/Philosopher-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Bold.woff2") format("woff2"), url("../../fonts/Philosopher-Bold.woff") format("woff"), url("../../fonts/Philosopher-Bold.ttf") format("truetype"), url("../../fonts/Philosopher-Bold.svg#Philosopher") format("svg");
+}
+@font-face {
+  font-family: "Philosopher Italic";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../../fonts/Philosopher-Italic.eot");
+  scr: local("Philosopher Italic"), url("../../fonts/Philosopher-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Italic.woff2") format("woff2"), url("../../fonts/Philosopher-Italic.woff") format("woff"), url("../../fonts/Philosopher-Italic.ttf") format("truetype"), url("../../fonts/Philosopher-Italic.svg#Philosopher") format("svg");
+}
+@font-face {
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/Philosopher-Regular.eot");
+  scr: local("Philosopher"), url("../../fonts/Philosopher-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Philosopher-Regular.woff2") format("woff2"), url("../../fonts/Philosopher-Regular.woff") format("woff"), url("../../fonts/Philosopher-Regular.ttf") format("truetype"), url("../../fonts/Philosopher-Regular.svg#Philosopher") format("svg");
+}
+@font-face {
+  font-family: "VelaSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/VelaSans-Regular.eot");
+  scr: local("VelaSans"), url("../../fonts/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/VelaSans-Regular.woff2") format("woff2"), url("../../fonts/VelaSans-Regular.woff") format("woff"), url("../../fonts/VelaSans-Regular.ttf") format("truetype"), url("../../fonts/VelaSans-Regular.svg#VelaSans") format("svg");
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Philosopher Bold", serif;
+  background-color: #F3F1EC;
+  font-size: 1.6rem;
+}
+
+main {
+  color: #4B4B4B;
+}
+
+button {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+.header__link {
+  color: #FFF;
+  font-size: 4rem;
+}
+
+.landing {
+  color: #FFF;
+}
+
+.landing__material-title {
+  font-size: 4rem;
+}
+
+.landing__from-title {
+  font-size: 3.4rem;
+}
+
+.landing__list-item {
+  font-size: 1.8rem;
+}
+
+.about-us__item {
+  font-size: 1.8rem;
+}
+
+.about-us__span {
+  color: #9EAF7C;
+  font-size: 7rem;
+}
+
+.action {
+  color: #FFF;
+}
+
+.action__link {
+  color: #9EAF7C;
+}
+
+.footer {
+  color: #FFF;
+}/*# sourceMappingURL=style.css.map */

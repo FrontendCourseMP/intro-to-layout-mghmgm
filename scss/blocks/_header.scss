@@ -1,0 +1,6 @@
+@use '../utils/variables';
+
+.header__link {
+    color: variables.$subtext-color;
+    font-size: 4rem;
+}

@@ -1,5 +1,7 @@
+@use '../utils/variables';
+
 .landing {
-    color: var(--subtext-color);
+    color: variables.$subtext-color;
 }
 
 .landing__material-title {
