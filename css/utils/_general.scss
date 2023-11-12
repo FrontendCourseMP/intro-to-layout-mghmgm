@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-color: #9EAF7C;
     --text-color: #4B4B4B;
     --subtext-color: #FFF;
@@ -7,9 +7,23 @@
 }
 
 body {
+    font-family: "Philosopher Bold", serif;
     background-color: var(--background-color);
+    font-size: 1.6rem;
 }
 
 main {
     color: var(--text-color);
+}
+
+button {
+    color: var(--subtext-color);
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 3.8rem;
 }

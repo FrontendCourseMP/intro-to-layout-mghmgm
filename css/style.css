@@ -254,7 +254,7 @@ template {
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Light";
   font-weight: 300;
   font-style: normal;
   src: url("../../fonts/Inter-Light.ttf") format("ttf");
@@ -266,19 +266,19 @@ template {
   src: url("../../fonts/Inter-Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Medium";
   font-weight: 500;
   font-style: normal;
   src: url("../../fonts/Inter-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter SemiBold";
   font-weight: 600;
   font-style: normal;
   src: url("../../fonts/Inter-SemiBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Bold";
   font-weight: 700;
   font-style: normal;
   src: url("../../fonts/Inter-Bold.ttf") format("ttf");
@@ -290,13 +290,13 @@ template {
   src: url("../../fonts/Philosopher-Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Philosopher";
+  font-family: "Philosopher Italic";
   font-weight: 400;
   font-style: italic;
   src: url("../../fonts/Philosopher-Italic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Philosopher";
+  font-family: "Philosopher Bold";
   font-weight: 700;
   font-style: normal;
   src: url("../../fonts/Philosopher-Bold.ttf") format("ttf");
@@ -316,9 +316,65 @@ template {
 }
 
 body {
+  font-family: "Philosopher Bold", serif;
   background-color: var(--background-color);
+  font-size: 1.6rem;
 }
 
 main {
   color: var(--text-color);
+}
+
+button {
+  color: var(--subtext-color);
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+.header__link {
+  color: var(--subtext-color);
+  font-size: 4rem;
+}
+
+.landing {
+  color: var(--subtext-color);
+}
+
+.landing__material-title {
+  font-size: 4rem;
+}
+
+.landing__from-title {
+  font-size: 3.4rem;
+}
+
+.landing__list-item {
+  font-size: 1.8rem;
+}
+
+.about-us__item {
+  font-size: 1.8rem;
+}
+
+.about-us__span {
+  color: var(--main-color);
+  font-size: 7rem;
+}
+
+.action {
+  color: var(--subtext-color);
+}
+
+.action__link {
+  color: var(--main-color);
+}
+
+.footer {
+  color: var(--subtext-color);
 }/*# sourceMappingURL=style.css.map */
