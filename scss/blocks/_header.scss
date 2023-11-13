@@ -1,6 +1,11 @@
 @use '../utils/variables';
 
 .header__link {
+    font-family: 'Philosopher Bold', serif;
     color: variables.$subtext-color;
     font-size: 4rem;
+}
+
+.header__btn {
+    border-radius: 60px;
 }

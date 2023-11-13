@@ -1,9 +1,19 @@
 @use '../utils/variables';
 
 .action {
+    font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
+}
+
+.action__title {
+    font-size: 3.4rem;
+}
+
+action__title-answer {
+    font-family: 'Philosopher Italic', serif;
 }
 
 .action__link {
     color: variables.$main-color;
 }
+

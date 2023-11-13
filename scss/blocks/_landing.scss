@@ -1,10 +1,12 @@
 @use '../utils/variables';
 
 .landing {
+    font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
 }
 
 .landing__material-title {
+    font-family: 'Philosopher Italic', serif;
     font-size: 4rem;
 }
 
@@ -14,4 +16,9 @@
 
 .landing__list-item {
     font-size: 1.8rem;
+}
+
+.landing__list-icon {
+    background: variables.$main-color;
+    border-radius: 50%;
 }

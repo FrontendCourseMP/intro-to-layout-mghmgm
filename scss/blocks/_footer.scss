@@ -1,5 +1,7 @@
 @use '../utils/variables';
 
-.footer {
+.footer__list {
+    font-family: 'Philosopher', serif;
     color: variables.$subtext-color;
+    background: variables.$main-color;
 }
