@@ -151,6 +151,7 @@ main {
 
 button {
   font-family: "Inter", sans-serif;
+  line-height: 120%;
   border-radius: 10px;
   color: #FFF;
   background: #9EAF7C;
@@ -230,8 +231,12 @@ h2 {
   font-size: 3.4rem;
 }
 
-action__title-answer {
+.action__title-answer {
   font-family: "Philosopher Italic", serif;
+}
+
+.action__condition {
+  line-height: 120%;
 }
 
 .action__link {
@@ -240,6 +245,10 @@ action__title-answer {
 
 .instruction__about {
   font-family: "Inter", sans-serif;
+}
+
+.instruction__list-title {
+  font-size: 2.8rem;
 }
 
 .reviews__user-name {
