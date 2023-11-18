@@ -1,4 +1,16 @@
 @use '../utils/variables';
+@use '../utils/mixins';
+
+.header {
+    background-color: variables.$subbackground-color;
+    padding-top: 25px;
+}
+
+.header__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+}
 
 .header__link {
     font-family: 'Philosopher Bold', serif;
@@ -8,4 +20,5 @@
 
 .header__btn {
     border-radius: 60px;
+    padding: 16px 13.7px;
 }

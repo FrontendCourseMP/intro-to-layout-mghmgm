@@ -1,7 +1,20 @@
 @use '../utils/variables';
+@use '../utils/mixins';
+
+.footer__wrapper {
+    @include mixins.wrapper;
+}
+
+.footer__title {
+    margin-top: 90px;
+}
 
 .footer__list {
     font-family: 'Philosopher', serif;
-    color: variables.$subtext-color;
     background: variables.$main-color;
+    color: variables.$subtext-color;
+}
+
+.footer__item {
+    line-height: 180%;
 }

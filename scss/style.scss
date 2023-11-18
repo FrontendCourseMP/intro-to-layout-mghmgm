@@ -1,14 +1,2 @@
-@use 'utils/reset';
-@use 'utils/fonts';
-@use 'utils/general';
-
-@use 'blocks/header';
-@use 'blocks/landing';
-@use 'blocks/about-us';
-@use 'blocks/about-product';
-@use 'blocks/catalog';
-@use 'blocks/action';
-@use 'blocks/instruction';
-@use 'blocks/reviews';
-@use 'blocks/clients';
-@use 'blocks/footer';
+@use 'utils/utils-forward';
+@use 'blocks/blocks-forward'

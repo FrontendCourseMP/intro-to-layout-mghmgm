@@ -1,6 +1,18 @@
-* {
-  padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
+  padding: 0;
   border: 0;
 }
 
@@ -137,6 +149,7 @@ a {
 }
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -148,6 +161,10 @@ body {
 main {
   font-family: "Philosopher Bold", serif;
 }
+main button {
+  padding: 24px 0;
+  max-width: 560px;
+}
 
 button {
   font-family: "Inter", sans-serif;
@@ -155,6 +172,7 @@ button {
   border-radius: 10px;
   color: #FFF;
   background: #9EAF7C;
+  letter-spacing: -0.32px;
 }
 
 h1 {
@@ -166,6 +184,28 @@ h2 {
   font-size: 3.8rem;
 }
 
+input {
+  border-radius: 60px;
+  padding: 20px;
+}
+
+textarea {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.header {
+  background-color: #444237;
+  padding-top: 25px;
+}
+
+.header__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__link {
   font-family: "Philosopher Bold", serif;
   color: #FFF;
@@ -174,81 +214,348 @@ h2 {
 
 .header__btn {
   border-radius: 60px;
+  padding: 16px 13.7px;
 }
 
 .landing {
   font-family: "Inter Light", sans-serif;
   color: #FFF;
+  background-color: #444237;
+  padding: 58px 0 88px 0;
+}
+
+.landing__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__name-title {
+  letter-spacing: -2.04px;
 }
 
 .landing__material-title {
   font-family: "Philosopher Italic", serif;
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 .landing__from-title {
   font-size: 3.4rem;
+  text-align: right;
+  letter-spacing: -2.04px;
+}
+
+.landing__btn {
+  margin-top: 41px;
+}
+
+.landing__list {
+  margin-top: 49px;
 }
 
 .landing__list-item {
+  display: flex;
+  align-items: center;
   font-size: 1.8rem;
+  letter-spacing: -1.08px;
+  margin-bottom: 16px;
 }
 
 .landing__list-icon {
   background: #9EAF7C;
   border-radius: 50%;
+  padding: 13px;
+  margin-right: 16px;
+}
+
+.about-us__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__img {
+  margin-top: 35px;
+}
+
+.about-us__list {
+  text-align: center;
+  margin-top: 40px;
 }
 
 .about-us__item {
-  font-family: "Inter Light", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
+  line-height: 140%;
 }
 
 .about-us__span {
   font-family: "Philosopher Bold", serif;
   color: #9EAF7C;
   font-size: 7rem;
+  line-height: 70%;
+  margin-top: 35px;
 }
 
 .about-us__item:last-child .about-us__span {
   font-size: 3rem;
 }
 
-.about-us__item-title {
+.about-us__decor {
+  position: relative;
+  margin-top: -108px;
+  left: -28px;
+  min-width: 350px;
+}
+
+.about-us__item:nth-child(2) .about-us__decor {
+  transform: rotate(8deg);
+}
+
+.about-us__btn {
+  margin-top: 30px;
+}
+
+.about-product {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-product__title {
+  margin: 40px 0;
+}
+
+.about-product__item {
+  display: flex;
+  border: 1px solid #C3BEBE;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(223, 224, 226, 0.2) 0.01%, rgba(143, 145, 149, 0.2) 100%);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
+  padding: 10px 0 0 10px;
+}
+
+.about-product__first-item {
+  padding-bottom: 30px;
+}
+.about-product__first-item .about-product__item-title {
+  margin: 8px 0 5px 0;
+}
+
+.about-product__second-item {
+  position: relative;
+  z-index: 2;
+  margin-top: -55px;
+  padding-bottom: 38px;
+}
+.about-product__second-item .about-product__item-title {
+  margin: 27px 0 16px 0;
+}
+
+.about-product__third-item {
+  position: relative;
+  z-index: 4;
+  margin-top: -120px;
+  padding: 10px 14px 19px 10px;
+}
+.about-product__third-item .about-product__item-title {
+  margin: 10px 0 10px 0;
+  max-width: 200px;
+}
+
+.about-product__icon {
+  background-color: #9EAF7C;
+  border-radius: 50%;
+  block-size: -moz-min-content;
+  block-size: min-content;
+  padding: 5px;
+}
+
+.about-product__item-main {
+  margin-left: 24px;
+}
+
+.about-product__item-title {
   font-size: 2.6rem;
 }
 
-.about-us__item-info {
+.about-product__item-info {
   font-family: "Inter", sans-serif;
+}
+
+.about-product__item-span {
+  font-family: "Inter Semibold", sans-serif;
+}
+
+.about-us__first-img {
+  position: relative;
+  left: 30px;
+  margin-top: -28px;
+  z-index: 1;
+  height: auto;
+  width: 470px;
+}
+
+.about-us__second-img {
+  position: relative;
+  left: -365px;
+  margin-top: -37px;
+  z-index: 3;
+  height: auto;
+  width: 640px;
+}
+
+.catalog__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__title {
+  margin: 40px 0;
+}
+
+.catalog__btn {
+  margin: 45px 0;
 }
 
 .action {
   font-family: "Inter Light", sans-serif;
   color: #FFF;
+  background-color: #444237;
+  padding: 55px 0 90px 0;
 }
 
-.action__title {
-  font-size: 3.4rem;
+.action__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.action__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.action__name-title {
+  font-size: 3.2rem;
+  font-family: "Inter Light", sans-serif;
+  letter-spacing: -1.92px;
+}
+
+.action__title-about {
+  font-size: 2.4rem;
+  letter-spacing: -1.44px;
 }
 
 .action__title-answer {
   font-family: "Philosopher Italic", serif;
+  font-size: 3.2rem;
+}
+
+.action__input-name {
+  margin-top: 50px;
+}
+
+.action__input-telephone {
+  margin-top: 20px;
+}
+
+.action__input-comment {
+  margin-top: 20px;
 }
 
 .action__condition {
   line-height: 120%;
+  font-size: 1rem;
+  margin-top: 15px;
 }
 
 .action__link {
   color: #9EAF7C;
 }
 
+.action__btn {
+  margin-top: 23px;
+}
+
+.instruction__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.instruction__title {
+  margin-top: 35px;
+}
+
+.instruction__item {
+  background: #FFF;
+  border-radius: 20px;
+  min-height: 406px;
+  padding: 45px 13px;
+  margin: 35px 0;
+}
+
 .instruction__about {
+  padding-left: 12px;
+}
+
+.instruction__info {
   font-family: "Inter", sans-serif;
 }
 
 .instruction__list-title {
   font-size: 2.8rem;
+}
+
+.instruction__img {
+  display: block;
+  margin: 0 auto 45px auto;
+}
+
+.instruction__list-title {
+  margin: 17px 0;
+}
+
+.reviews__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__title {
+  margin-top: 56px;
+}
+
+.reviews__list {
+  margin-top: 26px;
+}
+
+.reviews__item {
+  background: #FFF;
+  border-radius: 20px;
+  margin-top: 18px;
+  padding: 16px 18px 40px 18px;
+}
+
+.reviews__user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.reviews__user-logo {
+  margin-right: 24px;
 }
 
 .reviews__user-name {
@@ -259,8 +566,51 @@ h2 {
   font-size: 1.4rem;
 }
 
+.reviews__btn {
+  margin: 62px 0;
+}
+
+.clients__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+
+.clients__item {
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 8px 0 14px 10px;
+  width: 140px;
+  height: 140px;
+  margin-top: 18px;
+}
+
+.clients__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  margin-top: 90px;
+}
+
 .footer__list {
   font-family: "Philosopher", serif;
-  color: #FFF;
   background: #9EAF7C;
+  color: #FFF;
+}
+
+.footer__item {
+  line-height: 180%;
 }/*# sourceMappingURL=style.css.map */

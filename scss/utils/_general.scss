@@ -2,6 +2,7 @@
 
 :root {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,10 @@ body {
 
 main {
     font-family: "Philosopher Bold", serif;
+    button {
+        padding: 24px 0;
+        max-width: 560px;
+    }
 }
 
 button {
@@ -20,6 +25,7 @@ button {
     border-radius: 10px;
     color: variables.$subtext-color;
     background: variables.$main-color;
+    letter-spacing: -0.32px;
 }
 
 h1 {
@@ -30,3 +36,14 @@ h2 {
     font-family: 'Philosopher Italic', serif;
     font-size: 3.8rem;
 }
+
+input {
+    border-radius: 60px;
+    padding: 20px;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 20px;
+}
+

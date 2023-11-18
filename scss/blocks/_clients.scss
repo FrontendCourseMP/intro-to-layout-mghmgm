@@ -1,0 +1,27 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.clients__wrapper {
+    @include mixins.wrapper;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.clients__item {
+    background-color: variables.$subtext-color;
+    border-radius: 20px;
+    padding: 8px 0 14px 10px;
+    width: 140px;
+    height: 140px;
+    margin-top: 18px;
+}
+
+.clients__logo {
+    display: block;
+    margin: 0 auto;
+}

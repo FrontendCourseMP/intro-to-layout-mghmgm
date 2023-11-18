@@ -1,0 +1,15 @@
+@use '../utils/mixins';
+
+.catalog__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__title {
+    margin: 40px 0;
+}
+
+.catalog__btn{
+    margin: 45px 0;
+}

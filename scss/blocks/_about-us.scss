@@ -1,19 +1,57 @@
 @use '../utils/variables';
+@use '../utils/mixins';
+
+.about-us__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__img {
+    margin-top: 35px;
+}
+
+.about-us__list {
+    text-align: center;
+    margin-top: 40px;
+}
 
 .about-us__item {
-    font-family: 'Inter Light', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
+    line-height: 140%;
 }
 
 .about-us__span {
     font-family: 'Philosopher Bold', serif;
     color: variables.$main-color;
     font-size: 7rem;
+    line-height: 70%;
+    margin-top: 35px;
 }
 
 .about-us__item:last-child {
     .about-us__span{
         font-size: 3rem;
     }
+}
+
+.about-us__decor {
+    position: relative;
+    margin-top: -108px;
+    left: -28px;
+    min-width: 350px;
+}
+
+.about-us__item:nth-child(2) {
+    .about-us__decor {
+        transform: rotate(8deg);
+    }
+}
+
+.about-us__btn {
+    margin-top: 30px;
 }
 

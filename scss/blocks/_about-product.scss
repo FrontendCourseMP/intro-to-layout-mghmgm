@@ -1,7 +1,91 @@
-.about-us__item-title {
+@use '../utils/mixins';
+@use '../utils/variables';
+
+.about-product {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-product__title {
+    margin: 40px 0;
+}
+
+.about-product__item {
+    display: flex;
+    border: 1px solid #C3BEBE;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10.5px);
+    padding: 10px 0 0 10px;
+}
+
+.about-product__first-item {
+    padding-bottom: 30px;
+    .about-product__item-title {
+        margin: 8px 0 5px 0;
+    }
+}
+
+.about-product__second-item {
+    position: relative;
+    z-index: 2;
+    margin-top: -55px;
+    padding-bottom: 38px;
+    .about-product__item-title {
+        margin: 27px 0 16px 0;
+    }
+}
+
+.about-product__third-item {
+    position: relative;
+    z-index: 4;
+    margin-top: -120px;
+    padding: 10px 14px 19px 10px;
+    .about-product__item-title {
+        margin: 10px 0 10px 0;
+        max-width: 200px;
+    }
+}
+
+.about-product__icon {
+    background-color: variables.$main-color;
+    border-radius: 50%;
+    block-size: min-content;
+    padding: 5px;
+}
+
+.about-product__item-main {
+    margin-left: 24px;
+}
+
+.about-product__item-title {
     font-size: 2.6rem;
 }
 
-.about-us__item-info {
+.about-product__item-info {
     font-family: 'Inter', sans-serif;
+}
+
+.about-product__item-span {
+    font-family: 'Inter Semibold', sans-serif;
+}
+
+.about-us__first-img {
+    position: relative;
+    left: 30px;
+    margin-top: -28px;
+    z-index: 1;
+    height: auto;
+    width: 470px;
+}
+
+.about-us__second-img {
+    position: relative;
+    left:-365px;
+    margin-top: -37px;
+    z-index: 3;
+    height: auto;
+    width: 640px;
 }

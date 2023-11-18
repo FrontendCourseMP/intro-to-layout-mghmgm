@@ -1,25 +1,55 @@
 @use '../utils/variables';
+@use '../utils/mixins';
 
 .landing {
     font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
+    background-color: variables.$subbackground-color;
+    padding: 58px 0 88px 0;
+}
+
+.landing__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing__name-title {
+    letter-spacing: -2.04px;
 }
 
 .landing__material-title {
     font-family: 'Philosopher Italic', serif;
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 .landing__from-title {
     font-size: 3.4rem;
+    text-align: right;
+    letter-spacing: -2.04px;
+}
+
+.landing__btn {
+    margin-top: 41px;
+}
+
+.landing__list {
+    margin-top: 49px;
 }
 
 .landing__list-item {
+    display: flex;
+    align-items: center;
     font-size: 1.8rem;
+    letter-spacing: -1.08px;
+    margin-bottom: 16px;
+    
 }
 
 .landing__list-icon {
     background: variables.$main-color;
     border-radius: 50%;
+    padding: 13px;
+    margin-right: 16px;
 }
 

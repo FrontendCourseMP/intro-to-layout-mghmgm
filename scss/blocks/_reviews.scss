@@ -1,3 +1,37 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.reviews__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__title {
+    margin-top: 56px;
+}
+
+.reviews__list {
+    margin-top: 26px;
+}
+
+.reviews__item {
+    background: variables.$subtext-color;
+    border-radius: 20px;
+    margin-top: 18px;
+    padding: 16px 18px 40px 18px;
+}
+
+.reviews__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.reviews__user-logo {
+    margin-right: 24px;
+}
+
 .reviews__user-name {
     font-size: 2.8rem;
 }
@@ -5,3 +39,8 @@
 .reviews__about {
     font-size: 1.4rem;
 }
+
+.reviews__btn {
+    margin: 62px 0;
+}
+
