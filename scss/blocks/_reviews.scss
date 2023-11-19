@@ -36,8 +36,15 @@
     font-size: 2.8rem;
 }
 
+.reviews__svg {
+    position: relative;
+    left: -5px;
+}
+
 .reviews__about {
+    font-family: 'Philosopher', serif;
     font-size: 1.4rem;
+    margin-top: 15px;
 }
 
 .reviews__btn {

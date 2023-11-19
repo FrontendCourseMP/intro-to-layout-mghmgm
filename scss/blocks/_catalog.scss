@@ -1,3 +1,4 @@
+@use '../utils/variables';
 @use '../utils/mixins';
 
 .catalog__wrapper {
@@ -7,7 +8,29 @@
 }
 
 .catalog__title {
-    margin: 40px 0;
+    margin-top: 40px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__item {
+    margin-top: 36px;
+}
+
+.catalog__name {
+    margin-top: 11.2px;
+    max-width: 140px;
+}
+
+.catalog__item:first-child,
+.catalog__item:nth-child(2) {
+    .catalog__name {
+        max-width: none;
+    }
 }
 
 .catalog__btn{

@@ -2,6 +2,10 @@
 @use '../utils/variables';
 
 .about-product {
+    overflow:hidden;
+}
+
+.about-product__wrapper {
     @include mixins.wrapper;
     display: flex;
     flex-direction: column;
@@ -72,7 +76,7 @@
     font-family: 'Inter Semibold', sans-serif;
 }
 
-.about-us__first-img {
+.about-product__first-img {
     position: relative;
     left: 30px;
     margin-top: -28px;
@@ -81,9 +85,9 @@
     width: 470px;
 }
 
-.about-us__second-img {
+.about-product__second-img {
     position: relative;
-    left:-365px;
+    left:-366px;
     margin-top: -37px;
     z-index: 3;
     height: auto;
