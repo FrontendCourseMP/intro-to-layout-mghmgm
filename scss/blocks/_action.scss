@@ -6,7 +6,9 @@
     color: variables.$subtext-color;
     background-color:variables.$subbackground-color;
     padding-top: 55px;
-    background-image: url(../../image/background-2.png);
+    background-image: url(../../image/background_form.jpg);
+    background-position: 70%;
+    background-size: cover;
 }
 
 .action__wrapper {
@@ -54,6 +56,11 @@
 
 .action__link {
     color: variables.$main-color;
+
+}
+
+.action__link:hover {
+    text-decoration: underline;
 }
 
 .action__btn {

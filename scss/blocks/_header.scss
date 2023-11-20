@@ -2,7 +2,8 @@
 @use '../utils/mixins';
 
 .header {
-    background-color: inherit;
+    position: absolute;
+    width: 100%;
     padding-top: 25px;
 }
 

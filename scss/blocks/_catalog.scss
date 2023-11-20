@@ -18,12 +18,19 @@
 }
 
 .catalog__item {
+    display: flex;
+    flex-direction: column;
     margin-top: 36px;
+
 }
 
 .catalog__name {
     margin-top: 11.2px;
     max-width: 140px;
+}
+
+.catalog__svg {
+    max-width: 156px;
 }
 
 .catalog__item:first-child,

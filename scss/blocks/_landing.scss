@@ -6,8 +6,9 @@
     color: variables.$subtext-color;
     background-color: variables.$subbackground-color;
     padding-top: 130px;
-    background-image: url(../../image/background-1.jpg);
-    margin-top: -70px;
+    background-image: url(../../image/background_landing.jpg);
+    background-position: 57%;
+    background-size: cover;
 }
 
 .landing__wrapper {
