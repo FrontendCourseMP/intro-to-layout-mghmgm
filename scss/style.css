@@ -189,11 +189,6 @@ input {
   padding: 16px;
 }
 
-textarea {
-  border-radius: 20px;
-  padding: 16px;
-}
-
 .header {
   position: absolute;
   width: 100%;
@@ -511,6 +506,8 @@ textarea {
 
 .action__input-comment {
   margin-top: 20px;
+  border-radius: 20px;
+  padding: 16px;
 }
 
 .action__condition {

@@ -46,6 +46,8 @@
 
 .action__input-comment {
     margin-top: 20px;
+    border-radius: 20px;
+    padding: 16px;
 }
 
 .action__condition {
@@ -56,7 +58,6 @@
 
 .action__link {
     color: variables.$main-color;
-
 }
 
 .action__link:hover {
