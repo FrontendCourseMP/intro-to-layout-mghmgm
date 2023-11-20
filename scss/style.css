@@ -223,7 +223,7 @@ textarea {
   color: #FFF;
   background-color: #444237;
   padding: 130px 0 90px 0;
-  background-image: url(../../image/background_landing.jpg);
+  background-image: url(../../image/background_landing.webp);
   background-position: 57%;
   background-size: cover;
 }
@@ -469,7 +469,7 @@ textarea {
   font-family: "Inter Light", sans-serif;
   color: #FFF;
   background-color: #444237;
-  background-image: url(../../image/background_form.jpg);
+  background-image: url(../../image/background_form.webp);
   background-position: 70%;
   background-size: cover;
 }
