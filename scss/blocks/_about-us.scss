@@ -5,6 +5,7 @@
     @include mixins.wrapper;
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
 }
 
 .about-us__img {
@@ -13,7 +14,6 @@
 
 .about-us__list {
     text-align: center;
-    margin-top: 40px;
 }
 
 .about-us__item {
@@ -22,6 +22,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     line-height: 140%;
+    margin-top: 40px;
 }
 
 .about-us__span {
@@ -39,10 +40,8 @@
 }
 
 .about-us__decor {
-    position: relative;
-    margin-top: -108px;
-    left: -28px;
-    min-width: 350px;
+    position: absolute;
+    left: 20px;
 }
 
 .about-us__item:nth-child(2) {
@@ -52,6 +51,6 @@
 }
 
 .about-us__btn {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 

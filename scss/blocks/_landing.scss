@@ -5,7 +5,7 @@
     font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
     background-color: variables.$subbackground-color;
-    padding-top: 130px;
+    padding: 130px 0 90px 0;
     background-image: url(../../image/background_landing.jpg);
     background-position: 57%;
     background-size: cover;
@@ -33,11 +33,11 @@
 }
 
 .landing__btn {
-    margin-top: 41px;
+    margin-top: 40px;
 }
 
 .landing__list {
-    margin-top: 49px;
+    margin-top: 50px;
 }
 
 .landing__list-item {
@@ -57,6 +57,6 @@
 }
 
 .landing__decor {
-    margin-top: 40px;
-    margin-bottom: -10px;
+    position: absolute;
+    margin-top: 45px;
 }

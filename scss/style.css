@@ -222,7 +222,7 @@ textarea {
   font-family: "Inter Light", sans-serif;
   color: #FFF;
   background-color: #444237;
-  padding-top: 130px;
+  padding: 130px 0 90px 0;
   background-image: url(../../image/background_landing.jpg);
   background-position: 57%;
   background-size: cover;
@@ -251,11 +251,11 @@ textarea {
 }
 
 .landing__btn {
-  margin-top: 41px;
+  margin-top: 40px;
 }
 
 .landing__list {
-  margin-top: 49px;
+  margin-top: 50px;
 }
 
 .landing__list-item {
@@ -274,8 +274,8 @@ textarea {
 }
 
 .landing__decor {
-  margin-top: 40px;
-  margin-bottom: -10px;
+  position: absolute;
+  margin-top: 45px;
 }
 
 .about-us__wrapper {
@@ -283,6 +283,7 @@ textarea {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 
 .about-us__img {
@@ -291,7 +292,6 @@ textarea {
 
 .about-us__list {
   text-align: center;
-  margin-top: 40px;
 }
 
 .about-us__item {
@@ -300,6 +300,7 @@ textarea {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   line-height: 140%;
+  margin-top: 40px;
 }
 
 .about-us__span {
@@ -315,10 +316,8 @@ textarea {
 }
 
 .about-us__decor {
-  position: relative;
-  margin-top: -108px;
-  left: -28px;
-  min-width: 350px;
+  position: absolute;
+  left: 20px;
 }
 
 .about-us__item:nth-child(2) .about-us__decor {
@@ -326,7 +325,7 @@ textarea {
 }
 
 .about-us__btn {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .about-product {
@@ -470,7 +469,6 @@ textarea {
   font-family: "Inter Light", sans-serif;
   color: #FFF;
   background-color: #444237;
-  padding-top: 55px;
   background-image: url(../../image/background_form.jpg);
   background-position: 70%;
   background-size: cover;
@@ -479,6 +477,7 @@ textarea {
 .action__wrapper {
   width: 300px;
   margin: 0 auto;
+  padding: 50px 0 63px 0;
 }
 
 .action__form {
@@ -533,12 +532,10 @@ textarea {
 }
 
 .action__first-decor {
-  margin-top: -71px;
-  margin-bottom: 50px;
+  margin-top: -17px;
 }
 
 .action__second-decor {
-  margin-top: 63px;
   margin-bottom: -17px;
 }
 
@@ -619,8 +616,7 @@ textarea {
 }
 
 .reviews__svg {
-  position: relative;
-  left: -5px;
+  margin-left: -5px;
 }
 
 .reviews__about {
