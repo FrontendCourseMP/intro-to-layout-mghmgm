@@ -2,7 +2,7 @@
 @use '../utils/mixins';
 
 .header {
-    background-color: variables.$subbackground-color;
+    background-color: inherit;
     padding-top: 25px;
 }
 
