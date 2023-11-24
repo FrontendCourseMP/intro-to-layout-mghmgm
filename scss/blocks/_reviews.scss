@@ -12,13 +12,15 @@
 }
 
 .reviews__list {
-    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    gap: 18px;
 }
 
 .reviews__item {
     background: variables.$subtext-color;
     border-radius: 20px;
-    margin-top: 18px;
     padding: 16px 18px 40px 18px;
 }
 
@@ -47,6 +49,6 @@
 }
 
 .reviews__btn {
-    margin: 62px 0;
+    margin-top: 62px;
 }
 

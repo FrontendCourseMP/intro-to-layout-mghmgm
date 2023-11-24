@@ -69,10 +69,16 @@
 }
 
 .action__first-decor {
+    position: relative;
+    left: 50%;
     margin-top: -17px;
+    transform: rotate(180deg) translatex(50%);
 }
 
 .action__second-decor {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
     margin-bottom: -17px;
 }
 

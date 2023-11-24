@@ -10,6 +10,7 @@
 
 .about-us__img {
     margin-top: 35px;
+    border-radius: 20px;
 }
 
 .about-us__list {
@@ -22,7 +23,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     line-height: 140%;
-    margin-top: 40px;
+    margin-top: 75px;
 }
 
 .about-us__span {
@@ -30,7 +31,6 @@
     color: variables.$main-color;
     font-size: 7rem;
     line-height: 70%;
-    margin-top: 35px;
 }
 
 .about-us__item:last-child {
@@ -41,13 +41,12 @@
 
 .about-us__decor {
     position: absolute;
-    left: 20px;
+    left: 50%;
+    transform: translate(-50%,-25%);
 }
 
-.about-us__item:nth-child(2) {
-    .about-us__decor {
-        transform: rotate(8deg);
-    }
+.about-us__decor--rotate {
+    transform: translate(-50%,-25%) rotate(8deg);
 }
 
 .about-us__btn {

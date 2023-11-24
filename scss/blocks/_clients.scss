@@ -5,23 +5,32 @@
     @include mixins.wrapper;
 }
 
+.clients__title {
+    margin-top: 62px;
+}
+
 .clients__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 23px;
+    margin-top: 42px;
+    row-gap: 23px;
 }
 
 .clients__item {
     background-color: variables.$subtext-color;
     border-radius: 20px;
-    padding: 8px 0 14px 10px;
+    padding: 10px 7px;
     width: 140px;
     height: 140px;
-    margin-top: 18px;
 }
 
 .clients__logo {
-    display: block;
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.clients__name {
+    margin-top: 3px;
 }

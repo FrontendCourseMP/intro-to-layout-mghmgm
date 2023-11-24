@@ -163,7 +163,6 @@ main {
 }
 main button {
   padding: 24px 0;
-  max-width: 560px;
 }
 
 button {
@@ -250,7 +249,10 @@ input {
 }
 
 .landing__list {
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
+  gap: 16px;
 }
 
 .landing__list-item {
@@ -258,19 +260,22 @@ input {
   align-items: center;
   font-size: 1.8rem;
   letter-spacing: -1.08px;
-  margin-bottom: 16px;
+  gap: 16px;
 }
 
 .landing__list-icon {
   background: #9EAF7C;
   border-radius: 50%;
+  width: 60px;
   padding: 13px;
-  margin-right: 16px;
+  overflow: visible;
 }
 
 .landing__decor {
   position: absolute;
   margin-top: 45px;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .about-us__wrapper {
@@ -283,6 +288,7 @@ input {
 
 .about-us__img {
   margin-top: 35px;
+  border-radius: 20px;
 }
 
 .about-us__list {
@@ -295,7 +301,7 @@ input {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   line-height: 140%;
-  margin-top: 40px;
+  margin-top: 75px;
 }
 
 .about-us__span {
@@ -303,7 +309,6 @@ input {
   color: #9EAF7C;
   font-size: 7rem;
   line-height: 70%;
-  margin-top: 35px;
 }
 
 .about-us__item:last-child .about-us__span {
@@ -312,11 +317,12 @@ input {
 
 .about-us__decor {
   position: absolute;
-  left: 20px;
+  left: 50%;
+  transform: translate(-50%, -25%);
 }
 
-.about-us__item:nth-child(2) .about-us__decor {
-  transform: rotate(8deg);
+.about-us__decor--rotate {
+  transform: translate(-50%, -25%) rotate(8deg);
 }
 
 .about-us__btn {
@@ -346,7 +352,7 @@ input {
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
   -webkit-backdrop-filter: blur(10.5px);
           backdrop-filter: blur(10.5px);
-  padding: 10px 0 0 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .about-product__first-item {
@@ -440,6 +446,7 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 36px;
+  border-radius: 20px;
 }
 
 .catalog__name {
@@ -529,10 +536,16 @@ input {
 }
 
 .action__first-decor {
+  position: relative;
+  left: 50%;
   margin-top: -17px;
+  transform: rotate(180deg) translatex(50%);
 }
 
 .action__second-decor {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
   margin-bottom: -17px;
 }
 
@@ -588,13 +601,15 @@ input {
 }
 
 .reviews__list {
-  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+  gap: 18px;
 }
 
 .reviews__item {
   background: #FFF;
   border-radius: 20px;
-  margin-top: 18px;
   padding: 16px 18px 40px 18px;
 }
 
@@ -623,7 +638,7 @@ input {
 }
 
 .reviews__btn {
-  margin: 62px 0;
+  margin-top: 62px;
 }
 
 .clients__wrapper {
@@ -631,25 +646,34 @@ input {
   margin: 0 auto;
 }
 
+.clients__title {
+  margin-top: 62px;
+}
+
 .clients__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 23px;
+  margin-top: 42px;
+  row-gap: 23px;
 }
 
 .clients__item {
   background-color: #FFF;
   border-radius: 20px;
-  padding: 8px 0 14px 10px;
+  padding: 10px 7px;
   width: 140px;
   height: 140px;
-  margin-top: 18px;
 }
 
 .clients__logo {
-  display: block;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.clients__name {
+  margin-top: 3px;
 }
 
 .footer__title {
@@ -659,7 +683,10 @@ input {
 }
 
 .footer__map {
+  position: relative;
   margin-top: 40px;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .footer__background {
@@ -676,4 +703,8 @@ input {
 
 .footer__item {
   line-height: 180%;
+}
+
+.footer__item--last {
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
