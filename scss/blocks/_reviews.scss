@@ -3,8 +3,6 @@
 
 .reviews__wrapper {
     @include mixins.wrapper;
-    display: flex;
-    flex-direction: column;
 }
 
 .reviews__title {

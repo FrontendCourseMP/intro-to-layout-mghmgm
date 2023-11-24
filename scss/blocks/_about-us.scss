@@ -3,8 +3,6 @@
 
 .about-us__wrapper {
     @include mixins.wrapper;
-    display: flex;
-    flex-direction: column;
     margin-top: 5px;
 }
 

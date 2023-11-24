@@ -3,8 +3,6 @@
 
 .instruction__wrapper {
     @include mixins.wrapper;
-    display: flex;
-    flex-direction: column;
 }
 
 .instruction__title {

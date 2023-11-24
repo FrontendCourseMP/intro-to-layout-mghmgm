@@ -1,9 +1,6 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
-.footer {
-}
-
 .footer__title {
     @include mixins.wrapper;
     margin-top: 90px;
