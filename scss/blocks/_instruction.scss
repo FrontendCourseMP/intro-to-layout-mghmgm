@@ -1,0 +1,39 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.instruction__wrapper {
+    @include mixins.wrapper;
+}
+
+.instruction__title {
+    margin-top: 35px;
+}
+
+.instruction__item {
+    background: variables.$subtext-color;
+    border-radius: 20px;
+    min-height: 406px;
+    padding: 45px 13px;
+    margin: 35px 0;
+}
+
+.instruction__about {
+    padding-left: 12px;
+}
+
+.instruction__info {
+    font-family: 'Inter', sans-serif;
+}
+
+.instruction__list-title {
+    font-size: 2.8rem;
+}
+
+.instruction__img {
+    display: block;
+    margin: 0 auto 45px auto;
+}
+
+.instruction__list-title {
+    margin: 17px 0;
+}

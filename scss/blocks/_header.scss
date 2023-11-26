@@ -1,0 +1,25 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.header__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$subtext-color;
+    font-size: 4rem;
+}
+
+.header__btn {
+    border-radius: 60px;
+    padding: 14.5px 13px;
+}

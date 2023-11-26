@@ -1,0 +1,67 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.landing {
+    font-family: 'Inter Light', sans-serif;
+    color: variables.$subtext-color;
+    background-color: variables.$subbackground-color;
+    padding: 130px 0 90px 0;
+    background-image: url(../../image/background_landing.webp);
+    background-position: 57%;
+    background-size: cover;
+}
+
+.landing__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing__name-title {
+    letter-spacing: -2.04px;
+}
+
+.landing__material-title {
+    font-family: 'Philosopher Italic', serif;
+    font-size: 3.8rem;
+}
+
+.landing__from-title {
+    font-size: 3.4rem;
+    text-align: right;
+    letter-spacing: -2.04px;
+}
+
+.landing__btn {
+    margin-top: 40px;
+}
+
+.landing__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 16px;
+}
+
+.landing__list-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: -1.08px;
+    gap: 16px;
+}
+
+.landing__list-icon {
+    background: variables.$main-color;
+    border-radius: 50%;
+    width: 60px;
+    padding: 13px;
+    overflow: visible;
+}
+
+.landing__decor {
+    position: absolute;
+    margin-top: 45px;
+    left: 50%;
+    transform: translatex(-50%);
+}

@@ -1,0 +1,45 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.catalog__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__title {
+    margin-top: 40px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    border-radius: 20px;
+}
+
+.catalog__name {
+    margin-top: 11.2px;
+    max-width: 140px;
+}
+
+.catalog__svg {
+    max-width: 156px;
+}
+
+.catalog__item:first-child,
+.catalog__item:nth-child(2) {
+    .catalog__name {
+        max-width: none;
+    }
+}
+
+.catalog__btn{
+    margin: 45px 0;
+}

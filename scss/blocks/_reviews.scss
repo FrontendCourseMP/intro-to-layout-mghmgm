@@ -1,0 +1,52 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.reviews__wrapper {
+    @include mixins.wrapper;
+}
+
+.reviews__title {
+    margin-top: 56px;
+}
+
+.reviews__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    gap: 18px;
+}
+
+.reviews__item {
+    background: variables.$subtext-color;
+    border-radius: 20px;
+    padding: 16px 18px 40px 18px;
+}
+
+.reviews__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.reviews__user-logo {
+    margin-right: 24px;
+}
+
+.reviews__user-name {
+    font-size: 2.8rem;
+}
+
+.reviews__svg {
+    margin-left: -5px;
+}
+
+.reviews__about {
+    font-family: 'Philosopher', serif;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.reviews__btn {
+    margin-top: 62px;
+}
+

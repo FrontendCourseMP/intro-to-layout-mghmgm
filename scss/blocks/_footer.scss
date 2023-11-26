@@ -1,0 +1,33 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.footer__title {
+    @include mixins.wrapper;
+    margin-top: 90px;
+}
+
+.footer__map {
+    position: relative;
+    margin-top: 40px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.footer__background {
+    background: variables.$main-color;
+}
+
+.footer__list {
+    @include mixins.wrapper;
+    font-family: 'Philosopher', serif;
+    color: variables.$subtext-color;
+    padding: 34px 0 73px 0;
+}
+
+.footer__item {
+    line-height: 180%;
+}
+
+.footer__item--last {
+    margin-top: 16px;
+}

@@ -1,0 +1,84 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.action {
+    font-family: 'Inter Light', sans-serif;
+    color: variables.$subtext-color;
+    background-color:variables.$subbackground-color;
+    background-image: url(../../image/background_form.webp);
+    background-position: 70%;
+    background-size: cover;
+}
+
+.action__wrapper {
+    @include mixins.wrapper;
+    padding: 50px 0 63px 0;
+}
+
+.action__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.action__name-title {
+    font-size: 3.2rem;
+    font-family: 'Inter Light', sans-serif;
+    letter-spacing: -1.92px;
+}
+
+.action__title-about {
+    font-size: 2.4rem;
+    letter-spacing: -1.44px;
+}
+
+.action__title-answer {
+    font-family: 'Philosopher Italic', serif;
+    font-size: 3.2rem;
+}
+
+.action__input-name {
+    margin-top: 50px;
+}
+
+.action__input-telephone {
+    margin-top: 20px;
+}
+
+.action__input-comment {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.action__condition {
+    line-height: 120%;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.action__link {
+    color: variables.$main-color;
+}
+
+.action__link:hover {
+    text-decoration: underline;
+}
+
+.action__btn {
+    margin-top: 23px;
+}
+
+.action__first-decor {
+    position: relative;
+    left: 50%;
+    margin-top: -17px;
+    transform: rotate(180deg) translatex(50%);
+}
+
+.action__second-decor {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-bottom: -17px;
+}
+

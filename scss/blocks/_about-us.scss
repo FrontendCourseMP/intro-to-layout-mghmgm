@@ -1,0 +1,53 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.about-us__wrapper {
+    @include mixins.wrapper;
+    margin-top: 5px;
+}
+
+.about-us__img {
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+.about-us__list {
+    text-align: center;
+}
+
+.about-us__item {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    line-height: 140%;
+    margin-top: 75px;
+}
+
+.about-us__span {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$main-color;
+    font-size: 7rem;
+    line-height: 70%;
+}
+
+.about-us__item:last-child {
+    .about-us__span{
+        font-size: 3rem;
+    }
+}
+
+.about-us__decor {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+}
+
+.about-us__decor--rotate {
+    transform: translate(-50%,-25%) rotate(8deg);
+}
+
+.about-us__btn {
+    margin-top: 80px;
+}
+
