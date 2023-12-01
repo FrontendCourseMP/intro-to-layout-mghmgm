@@ -15,7 +15,7 @@ main {
     height: 300px;
     width: 280px;
     border-radius: 10%;
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 10px 10px 10px rgb(92, 92, 92);
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
     grid-template-rows: repeat(6, minmax(0, 1fr));
@@ -135,6 +135,7 @@ main {
     grid-template-areas: 
     "link";
     width: 100%;
+    border: 2px black solid;
 }
 
 .gallery>div>img {
