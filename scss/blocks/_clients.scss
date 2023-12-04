@@ -1,6 +1,10 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
+.clients {
+    overflow-x: hidden;
+}
+
 .clients__wrapper {
     @include mixins.wrapper;
 }
@@ -12,9 +16,11 @@
 .clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-inline: auto;
     margin-top: 42px;
     row-gap: 23px;
+    max-width: 419px;
 }
 
 .clients__item {

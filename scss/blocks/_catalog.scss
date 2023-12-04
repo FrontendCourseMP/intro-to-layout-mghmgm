@@ -1,6 +1,10 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
+.catalog {
+    overflow-x: hidden;
+}
+
 .catalog__wrapper {
     @include mixins.wrapper;
     display: flex;
@@ -11,10 +15,33 @@
     margin-top: 40px;
 }
 
+.catalog__big-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 36px;
+    justify-content: center;
+}
+
+.catalog__big-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__big-img{
+    border-radius: 20px;
+}
+
+.catalog__big-name {
+    margin-top: 11.2px;
+}
+
 .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-inline: auto;
+    max-width: 419px;
 }
 
 .catalog__item {
@@ -24,20 +51,17 @@
     border-radius: 20px;
 }
 
+.catalog__img {
+    border-radius: 20px;
+}
+
 .catalog__name {
     margin-top: 11.2px;
     max-width: 140px;
 }
 
-.catalog__svg {
+.catalog__name-svg {
     max-width: 156px;
-}
-
-.catalog__item:first-child,
-.catalog__item:nth-child(2) {
-    .catalog__name {
-        max-width: none;
-    }
 }
 
 .catalog__btn{

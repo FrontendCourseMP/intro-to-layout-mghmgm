@@ -1,6 +1,10 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
+.instruction {
+    overflow-x:hidden;
+}
+
 .instruction__wrapper {
     @include mixins.wrapper;
 }
@@ -32,6 +36,10 @@
 .instruction__img {
     display: block;
     margin: 0 auto 45px auto;
+}
+
+.instruction__svg {
+    width: 100%;
 }
 
 .instruction__list-title {

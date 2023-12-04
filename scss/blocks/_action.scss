@@ -2,6 +2,7 @@
 @use '../utils/mixins';
 
 .action {
+    overflow: hidden;
     font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
     background-color:variables.$subbackground-color;

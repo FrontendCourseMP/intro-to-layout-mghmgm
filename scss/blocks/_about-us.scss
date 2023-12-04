@@ -1,14 +1,22 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
+.about-us {
+    overflow-x: hidden;
+}
+
 .about-us__wrapper {
     @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
     margin-top: 5px;
 }
 
 .about-us__img {
+    align-self: center;
     margin-top: 35px;
     border-radius: 20px;
+    max-width: 560px;
 }
 
 .about-us__list {
@@ -24,7 +32,7 @@
     margin-top: 75px;
 }
 
-.about-us__span {
+.about-us__number {
     font-family: 'Philosopher Bold', serif;
     color: variables.$main-color;
     font-size: 7rem;
@@ -32,8 +40,10 @@
 }
 
 .about-us__item:last-child {
-    .about-us__span{
+    .about-us__number{
         font-size: 3rem;
+        max-width: 200px;
+        align-self: center;
     }
 }
 

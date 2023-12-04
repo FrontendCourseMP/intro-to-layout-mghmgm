@@ -1,6 +1,10 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
+.reviews {
+    overflow-x: hidden;
+}
+
 .reviews__wrapper {
     @include mixins.wrapper;
 }
@@ -38,6 +42,7 @@
 
 .reviews__svg {
     margin-left: -5px;
+    width: 100%;
 }
 
 .reviews__about {

@@ -2,10 +2,11 @@
 @use '../utils/mixins';
 
 .landing {
+    overflow:hidden;
     font-family: 'Inter Light', sans-serif;
     color: variables.$subtext-color;
     background-color: variables.$subbackground-color;
-    padding: 130px 0 90px 0;
+    padding-top: 130px;
     background-image: url(../../image/background_landing.webp);
     background-position: 57%;
     background-size: cover;
@@ -15,15 +16,44 @@
     @include mixins.wrapper;
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.landing__title {
+    max-width: 600px;
+}
+
+@media screen and (min-width: 1159px) {
+    .landing__title {
+        max-width: 887px;
+    }
 }
 
 .landing__name-title {
     letter-spacing: -2.04px;
 }
 
+@media screen and (min-width: 1159px) {
+    .landing__name-title {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1159px){
+    .landing__svg {
+        width: 358px;
+    }
+}
+
 .landing__material-title {
     font-family: 'Philosopher Italic', serif;
     font-size: 3.8rem;
+}
+
+@media screen and (min-width: 1159px) {
+    .landing__material-title {
+        font-size: 8rem;
+    }
 }
 
 .landing__from-title {
@@ -32,8 +62,15 @@
     letter-spacing: -2.04px;
 }
 
+@media screen and (min-width: 1159px) {
+    .landing__from-title {
+        font-size: 5rem;
+    }
+}
+
 .landing__btn {
     margin-top: 40px;
+    max-width: 560px;
 }
 
 .landing__list {
@@ -43,12 +80,26 @@
     gap: 16px;
 }
 
+@media screen and (min-width: 733px) {
+    .landing__list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
 .landing__list-item {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
     letter-spacing: -1.08px;
     gap: 16px;
+}
+
+@media screen and (min-width: 1159px) {
+    .landing__list-item {
+        font-size: 2.6rem;
+    }
 }
 
 .landing__list-icon {
@@ -60,8 +111,15 @@
 }
 
 .landing__decor {
-    position: absolute;
-    margin-top: 45px;
+    position: relative;
     left: 50%;
     transform: translatex(-50%);
+    margin-bottom: -20px;
+}
+
+@media screen and (min-width: 1365px) {
+    .landing__decor {
+        width: 110%;
+        margin-bottom: -30px;
+    }
 }
