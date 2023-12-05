@@ -7,10 +7,8 @@
     width: 100%;
     padding-top: 25px;
     color: variables.$subtext-color;
-}
 
-@media screen and (min-width:1159px) {
-    .header {
+    @media screen and (min-width:1159px) {
         padding-top: 0;
     }
 }
@@ -23,10 +21,8 @@
     font-family: 'Inter Light';
     font-size: 1.4rem;
     gap: 100px;
-}
 
-@media screen and (max-width:1158px) {
-    .header__sub {
+    @media screen and (max-width:1158px) {
         display: none;
     }
 }
@@ -51,10 +47,8 @@
     color: variables.$subtext-color;
     font-size: 4rem;
     margin-bottom: 15px;
-}
 
-@media screen and (min-width: 1159px) {
-    .header__link {
+    @media screen and (min-width: 1159px) {
         font-size: 7rem;
     }
 }
@@ -66,18 +60,16 @@
     align-items: center;
     font-size: 1.8rem;
     gap: 70px;
+
+    @media screen and (max-width: 929px) {
+        display: none;
+    }
 }
 
 .header__nav-item:hover {
     text-decoration: underline;
     color: variables.$main-color;
     transition: 0.1s;
-}
-
-@media screen and (max-width: 929px) {
-    .header__nav {
-        display: none;
-    }
 }
 
 .header__social {
@@ -90,6 +82,10 @@
     padding: 11px;
     border: solid 1px variables.$subtext-color;
     border-radius: 50px;
+
+    @media screen and (max-width: 1159px) {
+        display: none;
+    }
 }
 
 .header__social-item:last-child {
@@ -97,21 +93,12 @@
     border-color: variables.$main-color;
 }
 
-
-@media screen and (max-width: 1159px) {
-    .header__social {
-        display: none;
-    }
-}
-
 .header__btn {
     border-radius: 60px;
     padding: 14.5px 13px;
     margin-bottom: 15px;
-}
 
-@media screen and (min-width: 929px) {
-    .header__btn {
+    @media screen and (min-width: 929px) {
         display: none;
     }
 }
