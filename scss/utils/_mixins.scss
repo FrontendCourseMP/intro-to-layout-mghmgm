@@ -1,10 +1,7 @@
 @mixin wrapper {
     min-width: 300px;
     margin-inline: 45px;
-    @media screen and (min-width: 1440px) {
-        min-width: 1160px;
-        margin-inline: 140px;
-    }
+    
     @media screen and (min-width: 1530px) {
         width: 1440px;
         margin-inline: auto;

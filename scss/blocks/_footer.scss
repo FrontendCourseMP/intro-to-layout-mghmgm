@@ -3,6 +3,7 @@
 
 .footer {
     overflow-x: hidden;
+    
 }
 
 .footer__title {
@@ -10,22 +11,45 @@
     margin-top: 90px;
 }
 
-.footer__map {
+.footer__info {
     position: relative;
     margin-top: 40px;
-    left: 50%;
-    transform: translatex(-50%);
+}
+
+.footer__map {
+    width: 100%;
 }
 
 .footer__background {
     background: variables.$main-color;
+    padding: 34px 0 73px 0;
+
+    @media screen and (min-width: 1159px) {
+        @include mixins.wrapper;
+        padding: 35px 35px 73px 35px;
+        position: absolute;
+        width: 618px;
+        height: 513px;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+
+    @media screen and (min-width: 1530px) {
+        top: 15%;
+        left:25%;
+        transform: translatex(-50%);
+    }
 }
 
 .footer__list {
-    @include mixins.wrapper;
+    margin-inline: 45px;
     font-family: 'Philosopher', serif;
     color: variables.$subtext-color;
-    padding: 34px 0 73px 0;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2rem;
+        margin-inline: 0;
+    }
 }
 
 .footer__item {

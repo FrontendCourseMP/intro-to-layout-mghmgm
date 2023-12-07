@@ -1,12 +1,10 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
-.reviews {
-    overflow-x: hidden;
-}
-
 .reviews__wrapper {
     @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews__title {
@@ -16,14 +14,28 @@
 .reviews__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 44px;
     gap: 18px;
+
+    @media screen and (min-width: 1020px) {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
 }
 
 .reviews__item {
     background: variables.$subtext-color;
     border-radius: 20px;
     padding: 16px 18px 40px 18px;
+    max-width: 300px;
+    height: 480px;
+
+    @media screen and (min-width: 1159px) {
+        max-width: 350px;
+        height: 593px;
+    }
 }
 
 .reviews__user {
@@ -38,6 +50,10 @@
 
 .reviews__user-name {
     font-size: 2.8rem;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 3.4rem;
+    }
 }
 
 .reviews__svg {
@@ -49,6 +65,10 @@
     font-family: 'Philosopher', serif;
     font-size: 1.4rem;
     margin-top: 15px;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 1.6rem;
+    }
 }
 
 .reviews__btn {

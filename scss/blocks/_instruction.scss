@@ -7,18 +7,37 @@
 
 .instruction__wrapper {
     @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
 }
 
 .instruction__title {
     margin-top: 35px;
 }
 
+.instruction__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    gap: 35px;
+
+    @media screen and (min-width: 1020px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 .instruction__item {
     background: variables.$subtext-color;
     border-radius: 20px;
-    min-height: 406px;
+    height: 406px;
     padding: 45px 13px;
-    margin: 35px 0;
+    max-width: 300px;
+
+    @media screen and (min-width: 1159px) {
+        max-width: 350px;
+    }
 }
 
 .instruction__about {
@@ -27,10 +46,18 @@
 
 .instruction__info {
     font-family: 'Inter', sans-serif;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2rem;
+    }
 }
 
 .instruction__list-title {
     font-size: 2.8rem;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 3.4rem;
+    }
 }
 
 .instruction__img {
@@ -44,4 +71,8 @@
 
 .instruction__list-title {
     margin: 17px 0;
+}
+
+.instruction__btn {
+    margin-top: 35px;
 }

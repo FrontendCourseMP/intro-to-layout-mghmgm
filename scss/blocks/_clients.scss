@@ -7,6 +7,8 @@
 
 .clients__wrapper {
     @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
 }
 
 .clients__title {
@@ -17,10 +19,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-inline: auto;
     margin-top: 42px;
     row-gap: 23px;
     max-width: 419px;
+
+    @media screen and (min-width: 530px) {
+        max-width: 559px;
+    }
+
+    @media screen and (min-width: 680px) {
+        flex-wrap: nowrap;
+        max-width:1440px;
+    }
 }
 
 .clients__item {
@@ -29,14 +39,56 @@
     padding: 10px 7px;
     width: 140px;
     height: 140px;
+
+    @media screen and (min-width: 1159px) {
+        width: 250px;
+        height: 250px;
+        padding: 20px 23px;
+    }
+}
+
+.clients__item:first-child {
+    @media screen and (min-width: 680px) {
+        display: none;
+    }
+}
+
+.clients__item:nth-child(2) {
+    @media screen and (min-width: 680px) {
+        display: none;
+    }
 }
 
 .clients__logo {
     position: relative;
     left: 50%;
     transform: translatex(-50%);
+
+    @media screen and (min-width: 1159px) {
+        width: 152px;
+    }
 }
 
 .clients__name {
     margin-top: 3px;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2.4rem;
+        margin-top: 40px;
+    }
+}
+
+.clients__slide {
+    align-self: center;
+    margin-top: 42px;
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
+}
+
+.clients__btn {
+    margin-top: 60px;
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
 }

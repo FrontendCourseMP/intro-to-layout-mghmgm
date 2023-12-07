@@ -27,14 +27,6 @@
     }
 }
 
-.landing__name-title {
-    letter-spacing: -2.04px;
-
-    @media screen and (min-width: 1159px) {
-        font-size: 5rem;
-    }
-}
-
 @media screen and (min-width: 1159px){
     .landing__svg {
         width: 358px;
@@ -62,7 +54,6 @@
 
 .landing__btn {
     margin-top: 40px;
-    max-width: 560px;
 }
 
 .landing__list {
@@ -106,6 +97,6 @@
 
     @media screen and (min-width: 1365px) {
         width: 110%;
-        margin-bottom: -30px;
+        margin-bottom: -50px;
     }
 }

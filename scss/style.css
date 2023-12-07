@@ -164,24 +164,57 @@ main {
 main button {
   padding: 24px 0;
   width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+@media screen and (min-width: 1159px) {
+  main button {
+    width: 560px;
+  }
+}
+main button:hover {
+  background-color: #444237;
+  transition: 0.15s;
 }
 
 button {
   font-family: "Inter", sans-serif;
   line-height: 120%;
   border-radius: 10px;
+  max-width: 560px;
   color: #FFF;
   background: #9EAF7C;
   letter-spacing: -0.32px;
 }
+@media screen and (min-width: 1159px) {
+  button {
+    font-size: 1.8rem;
+  }
+}
 
 h1 {
   font-size: 3.4rem;
+  letter-spacing: -2.04px;
+}
+@media screen and (min-width: 1159px) {
+  h1 {
+    font-size: 5rem;
+  }
 }
 
 h2 {
   font-family: "Philosopher Italic", serif;
   font-size: 3.8rem;
+}
+@media screen and (min-width: 1159px) {
+  h2 {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1439px) {
+  h2 {
+    font-size: 8rem;
+  }
 }
 
 input {
@@ -231,12 +264,6 @@ input {
 .header__wrapper {
   min-width: 300px;
   margin-inline: 45px;
-}
-@media screen and (min-width: 1440px) {
-  .header__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
 }
 @media screen and (min-width: 1530px) {
   .header__wrapper {
@@ -328,12 +355,6 @@ input {
   flex-direction: column;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 1440px) {
-  .landing__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
-}
 @media screen and (min-width: 1530px) {
   .landing__wrapper {
     width: 1440px;
@@ -347,15 +368,6 @@ input {
 @media screen and (min-width: 1159px) {
   .landing__title {
     max-width: 887px;
-  }
-}
-
-.landing__name-title {
-  letter-spacing: -2.04px;
-}
-@media screen and (min-width: 1159px) {
-  .landing__name-title {
-    font-size: 5rem;
   }
 }
 
@@ -387,7 +399,6 @@ input {
 
 .landing__btn {
   margin-top: 40px;
-  max-width: 560px;
 }
 
 .landing__list {
@@ -434,22 +445,14 @@ input {
 @media screen and (min-width: 1365px) {
   .landing__decor {
     width: 110%;
-    margin-bottom: -30px;
+    margin-bottom: -50px;
   }
 }
 
 .about-us__wrapper {
   min-width: 300px;
   margin-inline: 45px;
-  display: flex;
-  flex-direction: column;
   margin-top: 5px;
-}
-@media screen and (min-width: 1440px) {
-  .about-us__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
 }
 @media screen and (min-width: 1530px) {
   .about-us__wrapper {
@@ -458,19 +461,52 @@ input {
   }
 }
 
+.about-us__main {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 930px) {
+  .about-us__main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.about-us__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-us__img {
   align-self: center;
   margin-top: 35px;
   border-radius: 20px;
-  max-width: 560px;
+}
+@media screen and (min-width: 930px) {
+  .about-us__img {
+    order: 2;
+    width: 428px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .about-us__img {
+    width: 560px;
+  }
 }
 
 .about-us__list {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 55px;
   gap: 70px;
+}
+@media screen and (min-width: 1300px) {
+  .about-us__list {
+    gap: 90px;
+    margin-top: 80px;
+  }
 }
 
 .about-us__item {
@@ -481,6 +517,11 @@ input {
   font-size: 1.8rem;
   line-height: 140%;
 }
+@media screen and (min-width: 1300px) {
+  .about-us__item {
+    font-size: 2.4rem;
+  }
+}
 
 .about-us__number {
   font-family: "Philosopher Bold", serif;
@@ -488,17 +529,33 @@ input {
   font-size: 7rem;
   line-height: 70%;
 }
+@media screen and (min-width: 1300px) {
+  .about-us__number {
+    font-size: 10rem;
+  }
+}
 
 .about-us__item:last-child .about-us__number {
   font-size: 3rem;
   max-width: 200px;
   align-self: center;
 }
+@media screen and (min-width: 1300px) {
+  .about-us__item:last-child .about-us__number {
+    font-size: 5rem;
+    max-width: 380px;
+  }
+}
 
 .about-us__decor {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -25%);
+}
+@media screen and (min-width: 1300px) {
+  .about-us__decor {
+    width: 480px;
+  }
 }
 
 .about-us__decor--rotate {
@@ -507,6 +564,11 @@ input {
 
 .about-us__btn {
   margin-top: 80px;
+}
+@media screen and (min-width: 930px) and (max-width: 1299px) {
+  .about-us__btn {
+    width: 340px;
+  }
 }
 
 .about-product {
@@ -518,12 +580,6 @@ input {
   margin-inline: 45px;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 1440px) {
-  .about-product__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
 }
 @media screen and (min-width: 1530px) {
   .about-product__wrapper {
@@ -544,14 +600,32 @@ input {
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
   -webkit-backdrop-filter: blur(10.5px);
           backdrop-filter: blur(10.5px);
-  padding: 10px 10px 0 10px;
+  padding: 10px 20px 0 10px;
+  max-width: 500px;
+  align-self: center;
+}
+@media screen and (min-width: 1210px) {
+  .about-product__item {
+    font-size: 2rem;
+  }
 }
 
 .about-product__first-item {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .about-product__first-item .about-product__item-title {
   margin: 8px 0 5px 0;
+}
+@media screen and (min-width: 1210px) {
+  .about-product__first-item .about-product__item-title {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .about-product__first-item {
+    align-self: start;
+    z-index: 4;
+  }
 }
 
 .about-product__second-item {
@@ -563,6 +637,12 @@ input {
 .about-product__second-item .about-product__item-title {
   margin: 27px 0 16px 0;
 }
+@media screen and (min-width: 1210px) {
+  .about-product__second-item {
+    align-self: end;
+    margin-top: -130px;
+  }
+}
 
 .about-product__third-item {
   position: relative;
@@ -573,6 +653,18 @@ input {
 .about-product__third-item .about-product__item-title {
   margin: 10px 0 10px 0;
   max-width: 200px;
+}
+@media screen and (min-width: 1210px) {
+  .about-product__third-item .about-product__item-title {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .about-product__third-item {
+    align-self: end;
+    margin-right: 40px;
+    margin-top: -180px;
+  }
 }
 
 .about-product__icon {
@@ -589,6 +681,11 @@ input {
 
 .about-product__item-title {
   font-size: 2.6rem;
+}
+@media screen and (min-width: 1210px) {
+  .about-product__item-title {
+    font-size: 3.4rem;
+  }
 }
 
 .about-product__item-info {
@@ -607,14 +704,35 @@ input {
   height: auto;
   width: 430px;
 }
+@media screen and (min-width: 1210px) {
+  .about-product__first-img {
+    display: none;
+  }
+}
 
 .about-product__second-img {
   position: relative;
   left: -366px;
   margin-top: -37px;
   z-index: 3;
-  height: auto;
   width: 640px;
+}
+@media screen and (min-width: 1210px) {
+  .about-product__second-img {
+    margin-top: -55px;
+    left: 0;
+    align-self: center;
+    width: 1200px;
+  }
+}
+
+.about-product__btn {
+  align-self: start;
+}
+@media screen and (max-width: 1210px) {
+  .about-product__btn {
+    display: none;
+  }
 }
 
 .catalog {
@@ -626,12 +744,6 @@ input {
   margin-inline: 45px;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 1440px) {
-  .catalog__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
 }
 @media screen and (min-width: 1530px) {
   .catalog__wrapper {
@@ -650,6 +762,11 @@ input {
   margin-top: 40px;
   gap: 36px;
   justify-content: center;
+}
+@media screen and (min-width: 570px) {
+  .catalog__big-list {
+    display: none;
+  }
 }
 
 .catalog__big-item {
@@ -672,21 +789,58 @@ input {
   margin-inline: auto;
   max-width: 419px;
 }
+@media screen and (min-width: 570px) {
+  .catalog__list {
+    max-width: 559px;
+  }
+}
+@media screen and (min-width: 1159px) {
+  .catalog__list {
+    max-width: 1439px;
+  }
+}
 
 .catalog__item {
   display: flex;
   flex-direction: column;
   margin-top: 36px;
-  border-radius: 20px;
+}
+
+@media screen and (max-width: 570px) {
+  .catalog__item:first-child {
+    display: none;
+  }
 }
 
 .catalog__img {
   border-radius: 20px;
+  width: 143px;
+  height: 143px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 1159px) {
+  .catalog__img {
+    width: 325px;
+    height: 254px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .catalog__img {
+    width: 360px;
+    height: 254px;
+  }
 }
 
 .catalog__name {
   margin-top: 11.2px;
   max-width: 140px;
+}
+@media screen and (min-width: 1159px) {
+  .catalog__name {
+    max-width: 280px;
+    font-size: 28px;
+  }
 }
 
 .catalog__name-svg {
@@ -712,12 +866,6 @@ input {
   margin-inline: 45px;
   padding: 50px 0 63px 0;
 }
-@media screen and (min-width: 1440px) {
-  .action__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
-}
 @media screen and (min-width: 1530px) {
   .action__wrapper {
     width: 1440px;
@@ -728,6 +876,7 @@ input {
 .action__form {
   display: flex;
   flex-direction: column;
+  max-width: 465px;
 }
 
 .action__name-title {
@@ -735,15 +884,52 @@ input {
   font-family: "Inter Light", sans-serif;
   letter-spacing: -1.92px;
 }
+@media screen and (min-width: 840px) {
+  .action__name-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1159px) {
+  .action__name-title {
+    font-size: 5rem;
+  }
+}
 
+@media screen and (min-width: 1159px) {
+  .action__svg {
+    width: 460px;
+  }
+}
 .action__title-about {
   font-size: 2.4rem;
   letter-spacing: -1.44px;
+}
+@media screen and (min-width: 840px) {
+  .action__title-about {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1159px) {
+  .action__title-about {
+    font-size: 4.2rem;
+    margin-top: 10px;
+  }
 }
 
 .action__title-answer {
   font-family: "Philosopher Italic", serif;
   font-size: 3.2rem;
+  text-align: end;
+}
+@media screen and (min-width: 840px) {
+  .action__title-answer {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (min-width: 1159px) {
+  .action__title-answer {
+    font-size: 8rem;
+  }
 }
 
 .action__input-name {
@@ -769,6 +955,11 @@ input {
 .action__link {
   color: #9EAF7C;
 }
+@media screen and (min-width: 1159px) {
+  .action__link {
+    font-size: 1.2rem;
+  }
+}
 
 .action__link:hover {
   text-decoration: underline;
@@ -776,20 +967,33 @@ input {
 
 .action__btn {
   margin-top: 23px;
+  max-width: 465px;
 }
 
 .action__first-decor {
   position: relative;
   left: 50%;
-  margin-top: -17px;
+  margin-top: -20px;
   transform: rotate(180deg) translatex(50%);
+}
+@media screen and (min-width: 1365px) {
+  .action__first-decor {
+    width: 110%;
+    margin-top: -40px;
+  }
 }
 
 .action__second-decor {
   position: relative;
   left: 50%;
   transform: translatex(-50%);
-  margin-bottom: -17px;
+  margin-bottom: -20px;
+}
+@media screen and (min-width: 1365px) {
+  .action__second-decor {
+    width: 110%;
+    margin-bottom: -40px;
+  }
 }
 
 .instruction {
@@ -799,12 +1003,8 @@ input {
 .instruction__wrapper {
   min-width: 300px;
   margin-inline: 45px;
-}
-@media screen and (min-width: 1440px) {
-  .instruction__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1530px) {
   .instruction__wrapper {
@@ -817,12 +1017,31 @@ input {
   margin-top: 35px;
 }
 
+.instruction__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  gap: 35px;
+}
+@media screen and (min-width: 1020px) {
+  .instruction__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .instruction__item {
   background: #FFF;
   border-radius: 20px;
-  min-height: 406px;
+  height: 406px;
   padding: 45px 13px;
-  margin: 35px 0;
+  max-width: 300px;
+}
+@media screen and (min-width: 1159px) {
+  .instruction__item {
+    max-width: 350px;
+  }
 }
 
 .instruction__about {
@@ -832,9 +1051,19 @@ input {
 .instruction__info {
   font-family: "Inter", sans-serif;
 }
+@media screen and (min-width: 1159px) {
+  .instruction__info {
+    font-size: 2rem;
+  }
+}
 
 .instruction__list-title {
   font-size: 2.8rem;
+}
+@media screen and (min-width: 1159px) {
+  .instruction__list-title {
+    font-size: 3.4rem;
+  }
 }
 
 .instruction__img {
@@ -850,19 +1079,15 @@ input {
   margin: 17px 0;
 }
 
-.reviews {
-  overflow-x: hidden;
+.instruction__btn {
+  margin-top: 35px;
 }
 
 .reviews__wrapper {
   min-width: 300px;
   margin-inline: 45px;
-}
-@media screen and (min-width: 1440px) {
-  .reviews__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1530px) {
   .reviews__wrapper {
@@ -878,14 +1103,30 @@ input {
 .reviews__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 44px;
   gap: 18px;
+}
+@media screen and (min-width: 1020px) {
+  .reviews__list {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
 }
 
 .reviews__item {
   background: #FFF;
   border-radius: 20px;
   padding: 16px 18px 40px 18px;
+  max-width: 300px;
+  height: 480px;
+}
+@media screen and (min-width: 1159px) {
+  .reviews__item {
+    max-width: 350px;
+    height: 593px;
+  }
 }
 
 .reviews__user {
@@ -901,6 +1142,11 @@ input {
 .reviews__user-name {
   font-size: 2.8rem;
 }
+@media screen and (min-width: 1159px) {
+  .reviews__user-name {
+    font-size: 3.4rem;
+  }
+}
 
 .reviews__svg {
   margin-left: -5px;
@@ -911,6 +1157,11 @@ input {
   font-family: "Philosopher", serif;
   font-size: 1.4rem;
   margin-top: 15px;
+}
+@media screen and (min-width: 1159px) {
+  .reviews__about {
+    font-size: 1.6rem;
+  }
 }
 
 .reviews__btn {
@@ -924,12 +1175,8 @@ input {
 .clients__wrapper {
   min-width: 300px;
   margin-inline: 45px;
-}
-@media screen and (min-width: 1440px) {
-  .clients__wrapper {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1530px) {
   .clients__wrapper {
@@ -946,10 +1193,20 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-inline: auto;
   margin-top: 42px;
   row-gap: 23px;
   max-width: 419px;
+}
+@media screen and (min-width: 530px) {
+  .clients__list {
+    max-width: 559px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .clients__list {
+    flex-wrap: nowrap;
+    max-width: 1440px;
+  }
 }
 
 .clients__item {
@@ -959,15 +1216,64 @@ input {
   width: 140px;
   height: 140px;
 }
+@media screen and (min-width: 1159px) {
+  .clients__item {
+    width: 250px;
+    height: 250px;
+    padding: 20px 23px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .clients__item:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .clients__item:nth-child(2) {
+    display: none;
+  }
+}
 
 .clients__logo {
   position: relative;
   left: 50%;
   transform: translatex(-50%);
 }
+@media screen and (min-width: 1159px) {
+  .clients__logo {
+    width: 152px;
+  }
+}
 
 .clients__name {
   margin-top: 3px;
+}
+@media screen and (min-width: 1159px) {
+  .clients__name {
+    font-size: 2.4rem;
+    margin-top: 40px;
+  }
+}
+
+.clients__slide {
+  align-self: center;
+  margin-top: 42px;
+}
+@media screen and (max-width: 680px) {
+  .clients__slide {
+    display: none;
+  }
+}
+
+.clients__btn {
+  margin-top: 60px;
+}
+@media screen and (max-width: 680px) {
+  .clients__btn {
+    display: none;
+  }
 }
 
 .footer {
@@ -979,12 +1285,6 @@ input {
   margin-inline: 45px;
   margin-top: 90px;
 }
-@media screen and (min-width: 1440px) {
-  .footer__title {
-    min-width: 1160px;
-    margin-inline: 140px;
-  }
-}
 @media screen and (min-width: 1530px) {
   .footer__title {
     width: 1440px;
@@ -992,34 +1292,54 @@ input {
   }
 }
 
-.footer__map {
+.footer__info {
   position: relative;
   margin-top: 40px;
-  left: 50%;
-  transform: translatex(-50%);
+}
+
+.footer__map {
+  width: 100%;
 }
 
 .footer__background {
   background: #9EAF7C;
-}
-
-.footer__list {
-  min-width: 300px;
-  margin-inline: 45px;
-  font-family: "Philosopher", serif;
-  color: #FFF;
   padding: 34px 0 73px 0;
 }
-@media screen and (min-width: 1440px) {
-  .footer__list {
-    min-width: 1160px;
-    margin-inline: 140px;
+@media screen and (min-width: 1159px) {
+  .footer__background {
+    min-width: 300px;
+    margin-inline: 45px;
+    padding: 35px 35px 73px 35px;
+    position: absolute;
+    width: 618px;
+    height: 513px;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+}
+@media screen and (min-width: 1159px) and (min-width: 1530px) {
+  .footer__background {
+    width: 1440px;
+    margin-inline: auto;
   }
 }
 @media screen and (min-width: 1530px) {
+  .footer__background {
+    top: 15%;
+    left: 25%;
+    transform: translatex(-50%);
+  }
+}
+
+.footer__list {
+  margin-inline: 45px;
+  font-family: "Philosopher", serif;
+  color: #FFF;
+}
+@media screen and (min-width: 1159px) {
   .footer__list {
-    width: 1440px;
-    margin-inline: auto;
+    font-size: 2rem;
+    margin-inline: 0;
   }
 }
 

@@ -19,22 +19,55 @@
 .action__form {
     display: flex;
     flex-direction: column;
+    max-width: 465px;
 }
 
 .action__name-title {
     font-size: 3.2rem;
     font-family: 'Inter Light', sans-serif;
     letter-spacing: -1.92px;
+
+    @media screen and (min-width: 840px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (min-width: 1159px) {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1159px) {
+    .action__svg {
+        width: 460px;
+    }
 }
 
 .action__title-about {
     font-size: 2.4rem;
     letter-spacing: -1.44px;
+    
+    @media screen and (min-width: 840px) {
+        font-size: 3.2rem;
+    }
+
+    @media screen and (min-width: 1159px) {
+        font-size: 4.2rem;
+        margin-top: 10px;
+    }
 }
 
 .action__title-answer {
     font-family: 'Philosopher Italic', serif;
     font-size: 3.2rem;
+    text-align: end;
+
+    @media screen and (min-width: 840px) {
+        font-size: 5.5rem;
+    }
+
+    @media screen and (min-width: 1159px) {
+        font-size: 8rem;
+    }
 }
 
 .action__input-name {
@@ -59,6 +92,10 @@
 
 .action__link {
     color: variables.$main-color;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 1.2rem;
+    }
 }
 
 .action__link:hover {
@@ -67,19 +104,30 @@
 
 .action__btn {
     margin-top: 23px;
+    max-width: 465px;
 }
 
 .action__first-decor {
     position: relative;
     left: 50%;
-    margin-top: -17px;
+    margin-top: -20px;
     transform: rotate(180deg) translatex(50%);
+
+    @media screen and (min-width: 1365px) {
+        width: 110%;
+        margin-top: -40px;
+    }
 }
 
 .action__second-decor {
     position: relative;
     left: 50%;
     transform: translatex(-50%);
-    margin-bottom: -17px;
+    margin-bottom: -20px;
+
+    @media screen and (min-width: 1365px) {
+        width: 110%;
+        margin-bottom: -40px;
+    }
 }
 
