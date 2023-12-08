@@ -1325,6 +1325,7 @@ input {
 }
 @media screen and (min-width: 1530px) {
   .footer__background {
+    width: 618px;
     top: 15%;
     left: 25%;
     transform: translatex(-50%);
