@@ -14,12 +14,12 @@ body {
 main {
     font-family: "Philosopher Bold", serif;
     button {
-        padding: 24px 0;
+        padding: 20px 0;
         width: 100%;
         align-self: center;
         justify-self: center;
 
-        @media screen and (min-width:1159px) {
+        @media screen and (min-width:959px) {
             width: 560px;
         }
     }
@@ -33,13 +33,12 @@ main {
 button {
     font-family: 'Inter', sans-serif;
     line-height: 120%;
-    border-radius: 10px;
-    max-width: 560px;
+    border-radius: 20px;
     color: variables.$subtext-color;
     background: variables.$main-color;
     letter-spacing: -0.32px;
 
-    @media screen and (min-width:1159px) {
+    @media screen and (min-width:959px) {
         font-size: 1.8rem;
     }
 }
@@ -48,7 +47,7 @@ h1 {
     font-size: 3.4rem;
     letter-spacing: -2.04px;
 
-    @media screen and (min-width: 1159px) {
+    @media screen and (min-width: 959px) {
         font-size: 5rem;
     }
 }
@@ -57,13 +56,10 @@ h2 {
     font-family: 'Philosopher Italic', serif;
     font-size: 3.8rem;
 
-    @media screen and (min-width:1159px) {
-        font-size: 6rem;
+    @media screen and (min-width:959px) {
+        font-size: 5.4rem;
     }
 
-    @media screen and (min-width:1439px) {
-        font-size: 8rem;
-    }
 }
 
 input {

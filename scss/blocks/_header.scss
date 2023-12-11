@@ -8,7 +8,7 @@
     padding-top: 25px;
     color: variables.$subtext-color;
 
-    @media screen and (min-width:1159px) {
+    @media screen and (min-width:959px) {
         padding-top: 0;
     }
 }
@@ -19,10 +19,10 @@
     display: flex;
     justify-content: end;
     font-family: 'Inter Light';
-    font-size: 1.4rem;
-    gap: 100px;
+    font-size: 1.35rem;
+    gap: 75px;
 
-    @media screen and (max-width:1158px) {
+    @media screen and (max-width:958px) {
         display: none;
     }
 }
@@ -45,11 +45,11 @@
 .header__link {
     font-family: 'Philosopher Bold', serif;
     color: variables.$subtext-color;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 15px;
 
-    @media screen and (min-width: 1159px) {
-        font-size: 7rem;
+    @media screen and (min-width: 959px) {
+        font-size: 5.25rem;
     }
 }
 
@@ -58,8 +58,8 @@
     letter-spacing: -1.08px;
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
-    gap: 70px;
+    font-size: 1.35rem;
+    gap: 52px;
 
     @media screen and (max-width: 929px) {
         display: none;
@@ -75,11 +75,11 @@
 .header__social {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .header__social-item {
-    padding: 11px;
+    padding: 9px;
     border: solid 1px variables.$subtext-color;
     border-radius: 50px;
 

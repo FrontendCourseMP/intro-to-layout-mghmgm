@@ -22,12 +22,12 @@
 .landing__title {
     max-width: 600px;
 
-    @media screen and (min-width: 1159px) {
+    @media screen and (min-width: 959px) {
         max-width: 887px;
     }
 }
 
-@media screen and (min-width: 1159px){
+@media screen and (min-width: 959px){
     .landing__svg {
         width: 358px;
     }
@@ -37,8 +37,8 @@
     font-family: 'Philosopher Italic', serif;
     font-size: 3.8rem;
 
-    @media screen and (min-width: 1159px) {
-        font-size: 8rem;
+    @media screen and (min-width: 959px) {
+        font-size: 6rem;
     }
 }
 
@@ -47,20 +47,21 @@
     text-align: right;
     letter-spacing: -2.04px;
 
-    @media screen and (min-width: 1159px) {
-        font-size: 5rem;
+    @media screen and (min-width: 959px) {
+        font-size: 3.75rem;
     } 
 }
 
 .landing__btn {
-    margin-top: 40px;
+    margin-top: 35px;
+    align-self: start;
 }
 
 .landing__list {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    gap: 16px;
+    margin-top: 45px;
+    gap: 14px;
 
     @media screen and (min-width: 733px) {
         flex-direction: row;
@@ -72,11 +73,11 @@
 .landing__list-item {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     letter-spacing: -1.08px;
     gap: 16px;
 
-    @media screen and (min-width: 1159px) {
+    @media screen and (min-width: 959px) {
         font-size: 2.6rem;
     }
 }
@@ -95,7 +96,7 @@
     transform: translatex(-50%);
     margin-bottom: -20px;
 
-    @media screen and (min-width: 1365px) {
+    @media screen and (min-width: 959px) {
         width: 110%;
         margin-bottom: -50px;
     }

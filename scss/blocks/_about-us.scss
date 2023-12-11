@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width:930px) {
+    @media screen and (min-width:795px) {
         flex-direction: row;
         justify-content: space-around;
     }
@@ -27,13 +27,13 @@
     margin-top: 35px;
     border-radius: 20px;
 
-    @media screen and (min-width:930px) {
+    @media screen and (min-width:795px) {
         order: 2;
-        width: 428px;
+        width: 315px;
     }
 
     @media screen and (min-width:1300px) {
-        width: 560px;
+        width: 390px;
     } 
 }
 
@@ -41,12 +41,12 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 55px;
-    gap: 70px;
+    margin-top: 42px;
+    gap: 52px;
 
     @media screen and (min-width:1300px) {
-        gap: 90px;
-        margin-top: 80px;
+        gap: 62px;
+        margin-top: 60px;
     }
 }
 
@@ -55,33 +55,33 @@
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     line-height: 140%;
 
     @media screen and (min-width:1300px) {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
 }
 
 .about-us__number {
     font-family: 'Philosopher Bold', serif;
     color: variables.$main-color;
-    font-size: 7rem;
+    font-size: 5.25rem;
     line-height: 70%;
 
     @media screen and (min-width:1300px) {
-        font-size: 10rem;
+        font-size: 7rem;
     }
 }
 
 .about-us__item:last-child {
     .about-us__number{
-        font-size: 3rem;
+        font-size: 2.25rem;
         max-width: 200px;
         align-self: center;
 
         @media screen and (min-width:1300px) {
-            font-size: 5rem;
+            font-size: 3.7rem;
             max-width: 380px;
         }   
     }    
@@ -92,8 +92,8 @@
     left: 50%;
     transform: translate(-50%,-25%);
 
-    @media screen and (min-width:1300px) {
-        width: 480px;
+    @media screen and (max-width:1300px) {
+        width: 270px;
     }   
 }
 
@@ -102,10 +102,10 @@
 }
 
 .about-us__btn {
-    margin-top: 80px;
+    margin-top: 50px;
 
-    @media screen and (min-width:930px) and (max-width:1299px) {
-        width: 340px;
-    }   
+        @media screen and (min-width:795px) and (max-width:1299px) {
+            width: 340px;
+        }  
 }
 

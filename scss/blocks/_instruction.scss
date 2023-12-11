@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 35px;
-    gap: 35px;
+    gap: 30px;
 
     @media screen and (min-width: 1020px) {
         flex-direction: row;
@@ -31,12 +31,12 @@
 .instruction__item {
     background: variables.$subtext-color;
     border-radius: 20px;
-    height: 406px;
+    height: 400px;
     padding: 45px 13px;
     max-width: 300px;
 
     @media screen and (min-width: 1159px) {
-        max-width: 350px;
+        max-width: 330px;
     }
 }
 
@@ -48,21 +48,21 @@
     font-family: 'Inter', sans-serif;
 
     @media screen and (min-width: 1159px) {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 }
 
 .instruction__list-title {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
 
     @media screen and (min-width: 1159px) {
-        font-size: 3.4rem;
+        font-size: 2.55rem;
     }
 }
 
 .instruction__img {
     display: block;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 35px auto;
 }
 
 .instruction__svg {
@@ -70,7 +70,7 @@
 }
 
 .instruction__list-title {
-    margin: 17px 0;
+    margin: 15px 0;
 }
 
 .instruction__btn {
