@@ -38,6 +38,10 @@
 
 .catalog__big-name {
     margin-top: 11.2px;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .catalog__list {
@@ -83,6 +87,10 @@
 .catalog__name {
     margin-top: 11.2px;
     max-width: 120px;
+
+    &:hover {
+        text-decoration: none;
+    }
 
     @media screen and (min-width:1159px) {
         max-width: 200px;

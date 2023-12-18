@@ -1,12 +1,48 @@
+@use 'utils/utils-forward';
 @use 'utils/variables';
+@use 'utils/mixins';
 
 main {
-    padding: 130px 0;
+    padding: 90px 0;
 }
 
 .header {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 10px 0;
+    color: variables.$subtext-color;
     background-color: variables.$main-color;
 }
+
+.header__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$subtext-color;
+    font-size: 3rem;
+
+    @media screen and (min-width: 959px) {
+        font-size: 5.25rem;
+    }
+}
+
+.header__btn {
+    border-radius: 60px;
+    padding: 14.5px 13px;    
+}
+
+.header__burger {
+    @media screen and (min-width: 959px) {
+        width: 30px;
+    }
+}
+
+/*----------------------------------------------------------------*/
 
 .template__box {
     height: 300px;
@@ -150,3 +186,64 @@ main {
     font-size: 5rem;
     transition: 0.3s;
 }
+
+/*----------------------------------------------------------------*/
+
+.footer {
+    overflow-x: hidden;
+    position: sticky;
+    top: 100vh;
+    
+}
+
+.footer__title {
+    @include mixins.wrapper;
+    margin-top: 90px;
+}
+
+.footer__info {
+    position: relative;
+    margin-top: 40px;
+}
+
+.footer__map {
+    width: 100%;
+}
+
+.footer__background {
+    background: variables.$main-color;
+    padding: 34px 0 73px 0;
+}
+
+.footer__list {
+    margin-inline: 45px;
+    font-family: 'Philosopher', serif;
+    color: variables.$subtext-color;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2rem;
+    }
+}
+
+.footer__item {
+    line-height: 180%;
+
+    &>a:hover {
+        color: variables.$text-color;
+    }
+
+    &>a:focus {
+        border: 1px solid variables.$text-color;
+    }
+
+    &--last {
+        margin-top: 16px;
+    }
+}
+
+
+
+
+
+
+

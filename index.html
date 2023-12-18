@@ -16,7 +16,7 @@
                 </p> 
             </div>
             <div class="header__main">
-                <a href="index.html" class="header__link">Logo</a>
+                <a href="index.html" class="header__logo">Logo</a>
                 <ul class="header__nav">
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link">О комании</a></li>
@@ -189,16 +189,16 @@
                 <img src="image/waves-3.svg" alt="" class="action__svg">
                 <p class="action__title-about">Тогда мы можем изготовить для вас мебель</p>
                 <p class="action__title-answer">по индивидуальному дизайну</p>
-                <form action="#" class="action__form">
-                    <input type="text" placeholder='Ваше имя *' class="action__input-name">
-                    <input type="text" placeholder='Ваш телефон *' class="action__input-telephone">
+                <form action="//httpbin.org/post" class="action__form" method="post">
+                    <input type="text" required placeholder='Ваше имя *' class="action__input-name">
+                    <input type="text" required placeholder='Ваш телефон *' class="action__input-telephone">
                     <textarea  placeholder='Ваш комментарий' cols="30" rows="5" class="action__input-comment"></textarea>
                         <div class="action__condition">
                             <p class="action__permission">Нажимая на кнопку, вы даете согласие на
                                 <a href="#" class="action__link">обработку персональных даных</a>
                             </p>
                         </div>
-                    <button class="action__btn">Оставить заявку</button>
+                    <button type="submit" class="action__btn">Оставить заявку</button>
                 </form>
             </div>
             <img src="image/hearts.svg" alt="" class="action__second-decor">
@@ -330,16 +330,20 @@
             <img src="image/map.webp" alt="Карта" class="footer__map">
             <div class="footer__background">
                 <ul class="footer__list">
+                    <li class="footer__item"><a href="form.html">Лабораторная работа form</a></li>
                     <li class="footer__item"><a href="grid.html">Лабораторная работа grid</a></li>
                     <li class="footer__item">Адрес - Москва, Степана Разина 119</li>
-                    <li class="footer__item">Телефон - 7 982 658 25 85</li>
+                    <li class="footer__item">Телефон - <a href="tel:8(982)658-25-85"> 8 982 658 25 85</a></li>
                     <li class="footer__item">ТОО «Консалтинговая Компания Financial-Tax Analytics»</li>
                     <li class="footer__item">БИН 181 040 010 133</li>
                     <li class="footer__item">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</li>
                     <li class="footer__item">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</li>
                     <li class="footer__item">ИИК KZ76 9650 3F00 0817 5335</li>
                     <li class="footer__item">БИК IRTYKZKA в АО "ForteBank"</li>
-                    <li class="footer__item footer__item--last">мобильный/ватсап + 7 778 775 77 68, info@fintax.kz</li>
+                    <li class="footer__item footer__item--last">мобильный/ватсап 
+                        <a href="tel:+7(778)-775-77-68">+ 7 778 775 77 68</a>,
+                        <a href="mailto:info@fintax.kz">info@fintax.kz</a>
+                    </li>
                 </ul>
             </div>
         </div>

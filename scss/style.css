@@ -152,6 +152,24 @@ a {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background-color: #9EAF7C;
+}
+
+::selection {
+  background-color: #9EAF7C;
+}
+
+::-moz-placeholder {
+  color: #9EAF7C;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: #9EAF7C;
+  font-size: 1.5rem;
+}
+
 body {
   background-color: #F3F1EC;
   font-size: 1.6rem;
@@ -162,19 +180,50 @@ main {
   font-family: "Philosopher Bold", serif;
 }
 main button {
+  border: solid #9EAF7C 1px;
   padding: 20px 0;
   width: 100%;
   align-self: center;
   justify-self: center;
+}
+main button:hover {
+  background-color: #444237;
+  color: #9EAF7C;
+  border-color: #444237;
+  box-shadow: 5px 5px black;
+  transform: rotate(3deg) scale(1.08);
+  transition: background-color, color, border-color, box-shadow, transform 0.15s;
+}
+main button:active {
+  color: #FFF;
+}
+main button:focus {
+  color: #000000;
+  border-color: #4B4B4B;
 }
 @media screen and (min-width: 959px) {
   main button {
     width: 560px;
   }
 }
-main button:hover {
-  background-color: #444237;
-  transition: 0.15s;
+
+a:hover {
+  -webkit-text-decoration: underline #9EAF7C;
+          text-decoration: underline #9EAF7C;
+  color: #9EAF7C;
+  transition: color 0.15s, -webkit-text-decoration;
+  transition: text-decoration, color 0.15s;
+  transition: text-decoration, color 0.15s, -webkit-text-decoration;
+}
+
+a:focus {
+  border: 1px solid #9EAF7C;
+}
+
+a:active {
+  color: #4B4B4B;
+  -webkit-text-decoration: underline #4B4B4B;
+          text-decoration: underline #4B4B4B;
 }
 
 button {
@@ -214,6 +263,10 @@ h2 {
 input {
   border-radius: 60px;
   padding: 16px;
+}
+
+textarea {
+  resize: none;
 }
 
 .header {
@@ -265,14 +318,18 @@ input {
   }
 }
 
-.header__link {
+.header__logo {
   font-family: "Philosopher Bold", serif;
   color: #FFF;
   font-size: 3rem;
   margin-bottom: 15px;
 }
+.header__logo:hover {
+  text-decoration: none;
+  color: #F3F1EC;
+}
 @media screen and (min-width: 959px) {
-  .header__link {
+  .header__logo {
     font-size: 5.25rem;
   }
 }
@@ -289,12 +346,6 @@ input {
   .header__nav {
     display: none;
   }
-}
-
-.header__nav-item:hover {
-  text-decoration: underline;
-  color: #9EAF7C;
-  transition: 0.1s;
 }
 
 .header__social {
@@ -572,6 +623,7 @@ input {
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
   .about-product__wrapper {
@@ -767,6 +819,9 @@ input {
 .catalog__big-name {
   margin-top: 11.2px;
 }
+.catalog__big-name:hover {
+  text-decoration: none;
+}
 
 .catalog__list {
   display: flex;
@@ -816,6 +871,9 @@ input {
   margin-top: 11.2px;
   max-width: 120px;
 }
+.catalog__name:hover {
+  text-decoration: none;
+}
 @media screen and (min-width: 1159px) {
   .catalog__name {
     max-width: 200px;
@@ -850,12 +908,6 @@ input {
   .action__wrapper {
     margin-inline: auto;
   }
-}
-
-.action__form {
-  display: flex;
-  flex-direction: column;
-  max-width: 465px;
 }
 
 .action__name-title {
@@ -896,16 +948,15 @@ input {
   }
 }
 
-.action__input-name {
+.action__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 465px;
   margin-top: 50px;
-}
-
-.action__input-telephone {
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .action__input-comment {
-  margin-top: 20px;
   border-radius: 20px;
   padding: 16px;
 }
@@ -913,25 +964,24 @@ input {
 .action__condition {
   line-height: 120%;
   font-size: 1rem;
-  margin-top: 15px;
+}
+@media screen and (min-width: 1159px) {
+  .action__condition {
+    font-size: 1.2rem;
+  }
 }
 
 .action__link {
   color: #9EAF7C;
 }
-@media screen and (min-width: 1159px) {
-  .action__link {
-    font-size: 1.2rem;
-  }
-}
-
-.action__link:hover {
-  text-decoration: underline;
-}
 
 .action__btn {
-  margin-top: 23px;
   max-width: 465px;
+  border-radius: 20px;
+}
+.action__btn:hover {
+  background-color: #444237;
+  transition: 0.15s;
 }
 
 .action__first-decor {
@@ -969,6 +1019,7 @@ input {
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
   .instruction__wrapper {
@@ -1139,6 +1190,7 @@ input {
   max-width: 1160px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1159px) {
   .clients__wrapper {
@@ -1240,6 +1292,8 @@ input {
 
 .footer {
   overflow-x: hidden;
+  position: sticky;
+  top: 100vh;
 }
 
 .footer__title {
@@ -1307,7 +1361,12 @@ input {
 .footer__item {
   line-height: 180%;
 }
-
+.footer__item > a:hover {
+  color: #4B4B4B;
+}
+.footer__item > a:focus {
+  border: 1px solid #4B4B4B;
+}
 .footer__item--last {
   margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@
     @include mixins.wrapper;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;   
 }
 
 .about-product__title {

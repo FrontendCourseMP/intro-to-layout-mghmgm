@@ -16,12 +16,6 @@
     padding: 50px 0 63px 0;
 }
 
-.action__form {
-    display: flex;
-    flex-direction: column;
-    max-width: 465px;
-}
-
 .action__name-title {
     font-size: 3rem;
     font-family: 'Inter Light', sans-serif;
@@ -58,16 +52,15 @@
     }
 }
 
-.action__input-name {
+.action__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
     margin-top: 50px;
-}
-
-.action__input-telephone {
-    margin-top: 20px;
+    gap:20px;
 }
 
 .action__input-comment {
-    margin-top: 20px;
     border-radius: 20px;
     padding: 16px;
 }
@@ -75,24 +68,24 @@
 .action__condition {
     line-height: 120%;
     font-size: 1rem;
-    margin-top: 15px;
-}
-
-.action__link {
-    color: variables.$main-color;
 
     @media screen and (min-width: 1159px) {
         font-size: 1.2rem;
     }
 }
 
-.action__link:hover {
-    text-decoration: underline;
+.action__link {
+    color: variables.$main-color;
 }
 
 .action__btn {
-    margin-top: 23px;
     max-width: 465px;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: variables.$subbackground-color;
+        transition: 0.15s;
+    }
 }
 
 .action__first-decor {

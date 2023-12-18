@@ -1,0 +1,249 @@
+@use 'utils/utils-forward';
+@use 'utils/variables';
+@use 'utils/mixins';
+
+main {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.header {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 8px 0;
+    color: variables.$subtext-color;
+    background-color: variables.$main-color;
+}
+
+.header__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    font-family: 'Philosopher Bold', serif;
+    color: variables.$subtext-color;
+    font-size: 3rem;
+
+    @media screen and (min-width: 959px) {
+        font-size: 5.25rem;
+    }
+}
+
+.header__btn {
+    border-radius: 60px;
+    padding: 14.5px 13px;    
+}
+
+.header__burger {
+    @media screen and (min-width: 959px) {
+        width: 30px;
+    }
+}
+
+/*----------------------------------------------------------------*/
+.attention {
+    color:#d14949;
+}
+
+input:focus {
+    border: 1px solid variables.$text-color;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.2rem;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+fieldset {
+    display: inline-block;
+    border: 2px variables.$text-color solid;
+    padding: 20px 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 2.8rem;
+}
+.registration__title {
+    font-size: 3.2rem;
+}
+
+.registration__gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    
+    &>label {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+input[type=radio]:checked+label {
+    color: variables.$main-color;
+}
+input[type=radio]:focus+label {
+    border: 1px solid variables.$main-color;
+}
+
+.registration__conacts {
+    margin-top: 20px;
+}
+
+.registration__daytime {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &>label {
+        margin-top: 0;
+        margin-right: 10px;
+    }
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+.registration__daytime>input[type=checkbox]:checked+label {
+    color: variables.$main-color;
+}
+input[type=checkbox]:focus+label {
+    border: 1px solid variables.$main-color;
+}
+
+.registration_btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.registration__reset{
+    width: 260px;
+    background-color: transparent;
+    color: variables.$main-color;
+}
+.registration__submit{
+    width: 260px;
+}
+
+dl {
+    font-size: 2rem;
+}
+dt {
+    margin-top: 40px;
+    font-size: 3rem;
+    &::first-letter {
+        font-size: 4rem;
+        color:variables.$main-color;
+    }
+}
+dd::before {
+    content: "🛈";
+}
+
+.dictionary>div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.dictionary__pseudoclass>li,
+.dictionary__pseudoelement>li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;   
+    gap: 10px;
+
+    &>label {
+        margin-top: 0;
+    }
+}
+
+.dictionary__pseudoelement>li:nth-child(2n) {
+    font-family: 'Inter Bold';
+}
+.dictionary__pseudoelement>li:nth-child(2n+1) {
+    color: variables.$main-color;
+}
+/*----------------------------------------------------------------*/
+
+.footer {
+    overflow-x: hidden;
+    position: sticky;
+    top: 100vh;
+}
+
+.footer__title {
+    @include mixins.wrapper;
+    margin-top: 90px;
+}
+
+.footer__info {
+    position: relative;
+    margin-top: 40px;
+}
+
+.footer__map {
+    width: 100%;
+}
+
+.footer__background {
+    background: variables.$main-color;
+    padding: 34px 0 73px 0;
+}
+
+.footer__list {
+    @include mixins.wrapper;
+    margin-inline: 45px;
+    font-family: 'Philosopher', serif;
+    color: variables.$subtext-color;
+
+    @media screen and (min-width: 1159px) {
+        font-size: 2rem;
+    }
+}
+
+.footer__item {
+    line-height: 180%;
+
+    &>a:hover {
+        color: variables.$text-color;
+    }
+
+    &>a:focus {
+        border: 1px solid variables.$text-color;
+    }
+
+    &--logo {
+        display: inline-block;
+        font-size: 4rem;
+        font-family: 'Philosopher Bold';
+    }
+
+    &--logo:hover {
+        transform: scale(1.5) rotate(30deg) skew(10deg);
+        transition: 0.3s;
+    }
+
+    &--last {
+        margin-top: 16px;
+    }
+}

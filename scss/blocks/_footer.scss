@@ -3,7 +3,8 @@
 
 .footer {
     overflow-x: hidden;
-    
+    position: sticky;
+    top: 100vh;
 }
 
 .footer__title {
@@ -55,8 +56,18 @@
 
 .footer__item {
     line-height: 180%;
+
+    &>a:hover {
+        color: variables.$text-color;
+    }
+
+    &>a:focus {
+        border: 1px solid variables.$text-color;
+    }
+
+    &--last {
+        margin-top: 16px;
+    }
 }
 
-.footer__item--last {
-    margin-top: 16px;
-}
+

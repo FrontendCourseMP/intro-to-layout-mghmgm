@@ -42,11 +42,16 @@
     @include mixins.wrapper;
 }
 
-.header__link {
+.header__logo {
     font-family: 'Philosopher Bold', serif;
     color: variables.$subtext-color;
     font-size: 3rem;
     margin-bottom: 15px;
+
+    &:hover {
+        text-decoration: none;
+        color: variables.$background-color;
+    }
 
     @media screen and (min-width: 959px) {
         font-size: 5.25rem;
@@ -66,12 +71,6 @@
     }
 }
 
-.header__nav-item:hover {
-    text-decoration: underline;
-    color: variables.$main-color;
-    transition: 0.1s;
-}
-
 .header__social {
     display: flex;
     align-items: center;
@@ -81,7 +80,7 @@
 .header__social-item {
     padding: 9px;
     border: solid 1px variables.$subtext-color;
-    border-radius: 50px;
+    border-radius: 50px; 
 
     @media screen and (max-width: 1159px) {
         display: none;

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="scss/form.css">
+    <title>Лабораторная работа</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__link">Logo</a>
+            <button class="header__btn">
+                <img src="image/burger.svg" alt="Навигация" class="header__burger">
+            </button>
+        </div>
+    </header>
+    <main>
+        <form action="//httpbin.org/post" method="post" class="registration">
+            <fieldset>
+                <legend class="registration__title">Регистрация пользователя</legend>
+
+                <fieldset class="registration__personal">
+                    <legend>Личная информация</legend>
+
+                    <label class="attention" for="name">Ваше имя *
+                        <input type="text" required name="name" id="name" placeholder="Олег"></label>
+                    <label class="attention" for="password">Введите пароль (от 6 до 15 знаков) *
+                        <input type="password" required name="password" id="password" placeholder="******" minlength="6" maxlength="15"></label>
+                    <label class="attention" for="birthday">Дата рождения *
+                        <input type="date" required name="birthday" id="birthday"></label>
+
+                    <label for="gender">Ваш пол</label>
+                        <div class="registration__gender">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Женский</label></div>
+                        <div class="registration__gender">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Мужской</label></div>
+                </fieldset>
+
+                <fieldset class="registration__conacts">
+                    <legend>Контактные данные</legend>
+                    <label class="attention" for="telephone">Введите номер телефона *
+                        <input type="tel" required name="telephone" id="telephone" placeholder="+7 (999) 999-99-99"></label>
+                    <label for="email">Введите электронную почту
+                        <input type="email" id="email" name="email" placeholder="oleg@email.com"></label>
+                    <label for="daytime">Удобное для связи время</label>
+
+                    <div class="registration__daytime">
+                        <input type="checkbox" name="daytime" id="morning" value="morning"/>
+                        <label for="morning">Утро</label>
+                        <input type="checkbox" name="daytime" id="afternoon" value="afternoon"/>
+                        <label for="afternoon">День</label>
+                        <input type="checkbox" name="daytime" id="evening" value="evening"/>
+                        <label for="evening">Вечер</label>
+                        <input type="checkbox" name="daytime" id="night" value="night"/>
+                        <label for="night">Ночь</label>
+                    </div>
+                </fieldset>
+
+                <div class="registration_btns">
+                    <button type="reset" class="registration__reset">Сброс</button>
+                    <button type="submit" class="registration__submit">Зарегестрироваться</button>
+                </div>
+            </fieldset>
+        </form>
+        <form action="" class="dictionary">
+            <dl>
+                <dt>Псевдоклассы</dt>
+                <dd> особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                <dt>Псевдэлементы</dt>
+                <dd> это элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).</dd>
+            </dl>
+            <div>
+                <ul class="dictionary__pseudoclass">
+                    <li>
+                        <input checked type="checkbox" name="pseudoclass" id="hover" value="hover"/>
+                        <label for="hover">:hover</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pseudoclass" id="invalid" value="invalid"/>
+                        <label for="invalid">:invalid</label>
+                    </li>
+                    <li>
+                        <input checked type="checkbox" name="pseudoclass" id="focus" value="focus"/>
+                        <label for="focus">:focus</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pseudoclass" id="first-child" value="first-child"/>
+                        <label for="first-child">:first-child</label>
+                    </li>
+                    <li>
+                        <input checked type="checkbox" name="pseudoclass" id="active" value="active"/>
+                        <label for="active">:active</label>
+                    </li>
+                </ul>
+                <ul class="dictionary__pseudoelement">
+                    <li>
+                        <input type="checkbox" name="pseudoelement" id="after" value="after"/>
+                        <label for="after">::after</label>
+                    </li>
+                    <li>
+                        <input checked type="checkbox" name="pseudoelement" id="before" value="before"/>
+                        <label for="before">::before</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pseudoelement" id="first-line" value="first-line"/>
+                        <label for="first-line">::first-line</label>
+                    </li>
+                    <li>
+                        <input checked type="checkbox" name="pseudoelement" id="selection" value="selection"/>
+                        <label for="selection">::selection</label>
+                    </li>
+                    <li>
+                        <input checked type="checkbox" name="pseudoelement" id="first-letter" value="first-letter"/>
+                        <label for="first-letter">::first-letter</label>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__background">
+            <ul class="footer__list">
+                <li class="footer__item footer__item--logo">Logo</li>
+                <li class="footer__item">Адрес - Москва, Степана Разина 119</li>
+                <li class="footer__item">Телефон - <a href="tel:8(982)658-25-85"> 8 982 658 25 85</a></li>
+                <li class="footer__item">ТОО «Консалтинговая Компания Financial-Tax Analytics»</li>
+                <li class="footer__item">БИН 181 040 010 133</li>
+                <li class="footer__item">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</li>
+                <li class="footer__item">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</li>
+                <li class="footer__item">ИИК KZ76 9650 3F00 0817 5335</li>
+                <li class="footer__item">БИК IRTYKZKA в АО "ForteBank"</li>
+                <li class="footer__item footer__item--last">мобильный/ватсап 
+                    <a href="tel:+7(778)-775-77-68">+ 7 778 775 77 68</a>,
+                    <a href="mailto:info@fintax.kz">info@fintax.kz</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
