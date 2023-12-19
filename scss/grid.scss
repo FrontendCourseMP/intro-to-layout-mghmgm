@@ -29,6 +29,11 @@ main {
     @media screen and (min-width: 959px) {
         font-size: 5.25rem;
     }
+
+    &:hover {
+        text-decoration: none;
+        color: variables.$background-color;
+    }
 }
 
 .header__btn {
@@ -230,10 +235,6 @@ main {
 
     &>a:hover {
         color: variables.$text-color;
-    }
-
-    &>a:focus {
-        border: 1px solid variables.$text-color;
     }
 
     &--last {

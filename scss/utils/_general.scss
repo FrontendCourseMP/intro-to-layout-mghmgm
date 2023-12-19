@@ -42,11 +42,6 @@ main {
             color: variables.$subtext-color;
         }
 
-        &:focus {
-            color: #000000;
-            border-color: variables.$text-color;
-        }
-
         @media screen and (min-width:959px) {
             width: 560px;
         }
@@ -59,15 +54,10 @@ a:hover {
     transition: text-decoration, color 0.15s;
 }
 
-a:focus {
-    border: 1px solid variables.$main-color;
-}
-
 a:active {
     color: variables.$text-color;
     text-decoration: underline variables.$text-color;
 }
-
 
 button {
     font-family: 'Inter', sans-serif;

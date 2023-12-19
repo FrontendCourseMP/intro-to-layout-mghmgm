@@ -61,10 +61,6 @@
         color: variables.$text-color;
     }
 
-    &>a:focus {
-        border: 1px solid variables.$text-color;
-    }
-
     &--last {
         margin-top: 16px;
     }

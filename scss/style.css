@@ -20,11 +20,11 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:active {
   outline: none;
 }
 
@@ -197,10 +197,6 @@ main button:hover {
 main button:active {
   color: #FFF;
 }
-main button:focus {
-  color: #000000;
-  border-color: #4B4B4B;
-}
 @media screen and (min-width: 959px) {
   main button {
     width: 560px;
@@ -214,10 +210,6 @@ a:hover {
   transition: color 0.15s, -webkit-text-decoration;
   transition: text-decoration, color 0.15s;
   transition: text-decoration, color 0.15s, -webkit-text-decoration;
-}
-
-a:focus {
-  border: 1px solid #9EAF7C;
 }
 
 a:active {
@@ -1363,9 +1355,6 @@ textarea {
 }
 .footer__item > a:hover {
   color: #4B4B4B;
-}
-.footer__item > a:focus {
-  border: 1px solid #4B4B4B;
 }
 .footer__item--last {
   margin-top: 16px;
