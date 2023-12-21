@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="keywords" content="Магазин уличной мебели из натурального дерева.">
     <link rel="stylesheet" href="scss/style.css">
     <title>Лабораторная работа</title>
 </head>
@@ -16,27 +17,27 @@
                 </p> 
             </div>
             <div class="header__main">
-                <a href="index.html" class="header__logo">Logo</a>
+                <a href="index.html" class="header__logo"><span class="sr-only">перейти на главную</span>Logo</a>
                 <ul class="header__nav">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">О комании</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Об изделиях</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Сотрудничество</a></li>
+                    <li class="header__nav-item"><a href="#landing" class="header__nav-link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#about-us" class="header__nav-link">О комании</a></li>
+                    <li class="header__nav-item"><a href="#about-product" class="header__nav-link">Об изделиях</a></li>
+                    <li class="header__nav-item"><a href="#reviews" class="header__nav-link">Отзывы</a></li>
+                    <li class="header__nav-item"><a href="#contacts" class="header__nav-link">Сотрудничество</a></li>
                 </ul>
                 <ul class="header__social">
-                    <li class="header__social-item"><a href="#"><img src="image/instagram.svg" alt="" class="header__social-icon"></a></li>
-                    <li class="header__social-item"><a href="#"><img src="image/telegram.svg" alt="" class="header__social-icon"></a></li>
-                    <li class="header__social-item"><a href="#"><img src="image/watsupp.svg" alt="" class="header__social-icon"></a></li>
+                    <li class="header__social-item"><span class="sr-only">перейти в instagram профиль</span><a href="#"><img src="image/instagram.svg" alt="instagram" class="header__social-icon"></a></li>
+                    <li class="header__social-item"><span class="sr-only">перейти в telegram канал</span><a href="#"><img src="image/telegram.svg" alt="telegram" class="header__social-icon"></a></li>
+                    <li class="header__social-item"><span class="sr-only">перейти в watsupp сообщения</span><a href="#"><img src="image/watsupp.svg" alt="watsupp" class="header__social-icon"></a></li>
                 </ul>
-                <button class="header__btn">
+                <button class="header__btn"><span class="sr-only">открыть навигацию по сайту</span>
                     <img src="image/burger.svg" alt="Навигация" class="header__burger">
                 </button>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="landing">
+        <section class="landing" id="landing">
             <div class="landing__wrapper">
                 <div class="landing__title">
                     <h1 class="landing__name-title">Уличная мебель</h1>
@@ -62,11 +63,11 @@
             </div>
             <img src="image/hearts.svg" alt="" class="landing__decor">
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="about-us__wrapper">
                 <h2 class="about-us__title">О компании</h2>
                 <div class="about-us__main">
-                    <img src="image/process.webp" alt="" class="about-us__img">
+                    <img src="image/process.webp" alt="Рабочий процесс" class="about-us__img">
                     <div class="about-us__info">
                         <ul class="about-us__list">
                             <li class="about-us__item">
@@ -90,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-product">
+        <section class="about-product" id="about-product">
             <div class="about-product__wrapper">
                 <h2 class="about-product__title">Об изделиях</h2>
                 <div class="about-product__first-item about-product__item">
@@ -190,9 +191,9 @@
                 <p class="action__title-about">Тогда мы можем изготовить для вас мебель</p>
                 <p class="action__title-answer">по индивидуальному дизайну</p>
                 <form action="//httpbin.org/post" class="action__form" method="post">
-                    <input type="text" required placeholder='Ваше имя *' class="action__input-name">
-                    <input type="text" required placeholder='Ваш телефон *' class="action__input-telephone">
-                    <textarea  placeholder='Ваш комментарий' cols="30" rows="5" class="action__input-comment"></textarea>
+                    <input type="text" name="fio" required placeholder='Ваше имя *' class="action__input-name">
+                    <input type="text" name="telephone" required placeholder='Ваш телефон *' class="action__input-telephone">
+                    <textarea name="comment" placeholder='Ваш комментарий' cols="30" rows="5" class="action__input-comment"></textarea>
                         <div class="action__condition">
                             <p class="action__permission">Нажимая на кнопку, вы даете согласие на
                                 <a href="#" class="action__link">обработку персональных даных</a>
@@ -235,13 +236,13 @@
                 <button class="instruction__btn">Оставить заявку</button>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="reviews__wrapper">
                 <h2 class="reviews__title">Отзывы</h2>
                 <ul class="reviews__list">
                     <li class="reviews__item">
                         <div class="reviews__user">
-                            <img src="image/annaivanova.webp" alt="" class="reviews__user-logo">
+                            <img src="image/annaivanova.webp" alt="Аватар" class="reviews__user-logo">
                             <p class="reviews__user-name">Анна Иванова</p>
                         </div>
                         <img src="image/waves-4.svg" alt="" class="reviews__svg">
@@ -255,7 +256,7 @@
                     </li>
                     <li class="reviews__item">
                         <div class="reviews__user">
-                            <img src="image/kirillkotov.webp" alt="" class="reviews__user-logo">
+                            <img src="image/kirillkotov.webp" alt="Аватар" class="reviews__user-logo">
                             <p class="reviews__user-name">Кирилл Котов</p>
                         </div>
                         <img src="image/waves-4.svg" alt="" class="reviews__svg">
@@ -267,7 +268,7 @@
                     </li>
                     <li class="reviews__item">
                         <div class="reviews__user">
-                            <img src="image/andrewgolovin.webp" alt="" class="reviews__user-logo">
+                            <img src="image/andrewgolovin.webp" alt="Аватар" class="reviews__user-logo">
                             <p class="reviews__user-name">Андрей Головин</p>
                         </div>
                         <img src="image/waves-4.svg" alt="" class="reviews__svg">
@@ -285,27 +286,27 @@
                 <h2 class="clients__title">Наши клиенты</h2>
                 <ul class="clients__list">
                     <li class="clients__item">
-                        <img src="image/miamibeach.webp" alt="" class="clients__logo">
+                        <img src="image/miamibeach.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">Аквапарк Майами</p>
                     </li>
                     <li class="clients__item">
-                        <img src="image/hawaii.webp" alt="" class="clients__logo">
+                        <img src="image/hawaii.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">Аквапарк Гаваии</p>
                     </li>
                     <li class="clients__item">
-                        <img src="image/aquatown.webp" alt="" class="clients__logo">
+                        <img src="image/aquatown.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">Аквапарк Акватаун</p>
                     </li>
                     <li class="clients__item">
-                        <img src="image/bb.webp" alt="" class="clients__logo">
+                        <img src="image/bb.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">Бассейн Баганашил</p>
                     </li>
                     <li class="clients__item">
-                        <img src="image/grandpark.webp" alt="" class="clients__logo">
+                        <img src="image/grandpark.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">ТРЦ “Грандпарк”</p>
                     </li>
                     <li class="clients__item">
-                        <img src="image/shymbulak.webp" alt="" class="clients__logo">
+                        <img src="image/shymbulak.webp" alt="Логотип" class="clients__logo">
                         <p class="clients__name">ГК Шымбулак</p>
                     </li>
                 </ul>
@@ -324,7 +325,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <h2 class="footer__title">Контакты</h2>
         <div class="footer__info">
             <img src="image/map.webp" alt="Карта" class="footer__map">

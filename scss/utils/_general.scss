@@ -1,5 +1,18 @@
 @use '../utils/variables';
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+  
+
 :root {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -28,14 +41,14 @@ main {
         width: 100%;
         align-self: center;
         justify-self: center;
+        transition: background-color,color,border-color,box-shadow,transform .15s;
 
         &:hover {
             background-color: variables.$subbackground-color;
             color: variables.$main-color;
             border-color: variables.$subbackground-color;
             box-shadow: 5px 5px black;
-            transform: rotate(3deg) scale(1.08);
-            transition: background-color,color,border-color,box-shadow,transform .15s;
+            transform: rotate(3deg) scale(1.08); 
         }
 
         &:active {

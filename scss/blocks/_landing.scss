@@ -55,6 +55,7 @@
 .landing__btn {
     margin-top: 35px;
     align-self: start;
+    background-color: variables.$сontrast-main-color;
 }
 
 .landing__list {
@@ -83,11 +84,10 @@
 }
 
 .landing__list-icon {
-    background: variables.$main-color;
+    background: variables.$сontrast-main-color;
     border-radius: 50%;
     width: 60px;
-    padding: 13px;
-    overflow: visible;
+    padding: 12px;
 }
 
 .landing__decor {

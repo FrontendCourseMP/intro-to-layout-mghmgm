@@ -71,6 +71,10 @@
     }
 }
 
+.header__nav-link:hover {
+    color:variables.$contrast-main-color;
+}
+
 .header__social {
     display: flex;
     align-items: center;
@@ -88,14 +92,15 @@
 }
 
 .header__social-item:last-child {
-    background-color: variables.$main-color;
-    border-color: variables.$main-color;
+    background-color: variables.$сontrast-main-color;
+    border-color: variables.$сontrast-main-color;
 }
 
 .header__btn {
     border-radius: 60px;
     padding: 14.5px 13px;
     margin-bottom: 15px;
+    background-color: variables.$сontrast-main-color;
 
     @media screen and (min-width: 929px) {
         display: none;

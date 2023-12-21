@@ -81,6 +81,7 @@
 .action__btn {
     max-width: 465px;
     border-radius: 20px;
+    background-color: variables.$сontrast-main-color;
 
     &:hover {
         background-color: variables.$subbackground-color;
